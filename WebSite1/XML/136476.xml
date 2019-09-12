@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<branchCategory xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><name>VP*4*-X555, Residual Pressure Release Valve, ISO13849-1</name><seoslug>VP-X555-Residual-Pressure-Release-Valve-ISO13849-1~136476</seoslug><imageS>VP_X555.jpg</imageS><imageM>VP_X555.jpg</imageM><imageL>VP_X555.jpg</imageL><iso_symbol>VP_X555.jpg</iso_symbol><series_catalog>VP_VG.pdf</series_catalog><description>&amp;lt;p&amp;gt;Special version of the VP series valve that conforms to ISO13849-1 safety standard, categories 3 and 4. These are a dual residual pressure release valve with detection of main valve position.&amp;lt;/p&amp;gt;</description><bullets>&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Safety standard ISO13849-1 certified (corresponding to category 4)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Detection of main valve position by safety limit switch&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Highly reliable construction&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;With soft start valve (-X555)&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;</bullets><preferredproduct>not-used-at-this-time</preferredproduct><breadCrumbs><breadCrumb><name>Directional Control Valves</name><seoslug>Directional-Control-Valves</seoslug><id>27131</id></breadCrumb><breadCrumb><name>Safety Pressure Relief Valves</name><seoslug>Safety-Pressure-Relief-Valves</seoslug><id>160719</id></breadCrumb><breadCrumb><name>VP/VG Residual Pressure Release ISO Valve</name><seoslug>VP-VG-Residual-Pressure-Release-ISO-Valve</seoslug><id>128692</id></breadCrumb><breadCrumb><name>VP*4*-X555, Residual Pressure Release Valve, ISO13849-1</name><seoslug>VP-4-X555-Residual-Pressure-Release-Valve-ISO13849-1</seoslug><id>136474</id></breadCrumb></breadCrumbs><hideFromProduction>0</hideFromProduction><branchItems/><configurableData><jsInitConfig>var locale_code = &amp;apos;en&amp;apos;;
+var catalog_code = &amp;apos;smc&amp;apos;;
+var logcat_code = &amp;apos;SMCUS&amp;apos;;
+var userID = -1;
+var pattern_code = &amp;apos;VP8781&amp;apos;;
+var partno_notvalid_text = &amp;apos;The part number needs to be valid in order to view/download.&amp;apos;;
+var rodEndArray = new Array(1);
+var cntArray = 0;
+var base_linecode = &amp;quot;V_M&amp;quot;;
+var series = &amp;quot;VP/VG Residual Pressure Release ISO Valve&amp;quot;;
+var catalog_dsn = &amp;quot;CC_catalog_smc&amp;quot;;
+var product_id = 136476;
+var hostPages = &amp;quot;/cc_host/pages/&amp;quot;;
+var RodBaseUnits = &amp;quot;INCH&amp;quot;;
+var reqpartno_buttontext = &amp;quot;Request part Number&amp;quot;;
+var ordcustrodends_linktext = &amp;quot;Ordering Custom Rod Ends&amp;quot;;
+var ordcustrodend_msgtext = &amp;quot;The &amp;lt;b&amp;gt;Request Part Number&amp;lt;/b&amp;gt; button is available for registered users when you have completed entering all of the required data fields with valid data. When you press this button your part will be saved in favorites with a special part number. You can used this part number to place an order.&amp;lt;br&amp;gt;&amp;lt;ol compact &amp;gt;&amp;lt;li&amp;gt;SMC will use standard values if no dimension values are entered.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;The same tolerances and finishes used for the standard product will apply. If different tolerances or finish is necessary, please contact SMC; your order may be evaluated for submission as a Request for Special (RFS). &amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;In the case of single acting, spring extend or spring return type cylinders, enter the dimensions when the cylinder is in the retracted position (i.e., the rod is retracted).&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;In the case of double rod type cylinder, you must specify whether the modified rod end modifications apply to both rod ends or only one end.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;When a rod-end modification is specified for a double-rod cylinder, one rod end modification is allowed. This may be applied to one rod end, or both rod ends. If dissimilar modifications are required for each end, please contact SMC; your order may be evaluated for submission as a Request for Special (RFS).&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;quot;;
+var addOptsDomArray = new Array();
+function Init() {
+gConstraintFormID = &amp;apos;form&amp;apos;;
+oStateMessages[&amp;apos;Complete&amp;apos;] = &amp;apos;Part Number is &amp;lt;span style=\&amp;quot;color: #00A000\&amp;quot;&amp;gt;Complete&amp;lt;/span&amp;gt;&amp;apos;;
+oStateMessages[&amp;apos;Partial&amp;apos;] = &amp;apos;Part Number is &amp;lt;span style=\&amp;quot;color: #CCAA00\&amp;quot;&amp;gt;Partial&amp;lt;/span&amp;gt;&amp;apos;;
+oStateMessages[&amp;apos;Invalid&amp;apos;] = &amp;apos;Part Number is &amp;lt;span style=\&amp;quot;color: #AA0000\&amp;quot;&amp;gt;Invalid&amp;lt;/span&amp;gt;&amp;apos;;
+showDomainMessages = smcShowDomainMessages;
+var formEle = document.getElementById(&amp;apos;form&amp;apos;);
+var formOffSetWidth = 0;
+for(i = 0; i &amp;lt; formEle.length; i++) {
+if(formEle.elements[i].type == &amp;quot;select-one&amp;quot;) {
+if(formEle.elements[i].offsetWidth &amp;lt; formOffSetWidth) {
+formEle.elements[i].style.width = &amp;quot;100%&amp;quot;;
+}
+if(formOffSetWidth == 0) {
+formOffSetWidth = formEle.elements[i].offsetWidth;
+}
+}
+if (formEle.elements[i].getAttribute(&amp;apos;selectBoxOptions&amp;apos;)) {
+var idname = formEle.elements[i].id;
+createEditableSelect(formEle.elements[i]);
+formatStandardValues(idname);
+document.onclick = selectBox_hideOptions;
+}
+}
+if (typeof InitConfig != &amp;quot;undefined&amp;quot;) {
+InitConfig();
+}
+oDomains.setNoPick(&amp;quot;&amp;quot;);
+oDomains.setGrammarFilter(&amp;apos;^[\-]&amp;apos;);
+formChange = customFormChange;
+formChange(0);
+if (typeof PostInitConfig != &amp;quot;undefined&amp;quot;) {
+PostInitConfig();
+}
+}
+function InitConfig() {
+}
+function PostInitConfig() {
+if (!hasXOptions) {
+}
+}
+var confirmwin;
+var configName = &amp;quot;&amp;quot;;
+function requestRodEndPartNumber() {
+confirmwin = open(&amp;quot;blank.htm&amp;quot;, &amp;quot;confirmWindow&amp;quot;, &amp;quot;menubar=no,resizable=yes,toolbar=no,titlebar=no,width=660,height=700,scrollbars=yes&amp;quot;);
+var destinSel = document.getElementById(&amp;apos;destination&amp;apos;);
+var oForm = document.forms[&amp;apos;requestrodendform&amp;apos;];
+oForm.xml.value = oDomains.configStateToXML();
+oForm.specList.value = buildSpecList();
+oForm.patternCode.value = &amp;quot;VP8781&amp;quot;;
+oForm.favFolderID.value = destinSel.options[destinSel.selectedIndex].value;
+oForm.configState.value = oDomains.getConstraintEngineState();
+oForm.newExtCode.value = currentPartNumber;
+oForm.configName.value = currentPartNumber;
+oForm.action = &amp;quot;/cc_host/pages/public/custom/smc/services/confirmRodendSS.cfm&amp;quot;;
+oForm.target = &amp;quot;confirmWindow&amp;quot;;
+oForm.doaction.value = &amp;apos;request&amp;apos;;
+oForm.formattedStroke.value = formattedStroke;
+oForm.submit();
+setTimeout(&amp;quot;confirmwin.focus();&amp;quot;,200);
+}
+var formattedStroke = &amp;quot;&amp;quot;;
+function buildSpecList() {
+partArray = oDomains.getPartNumber();
+specList = &amp;apos;&amp;apos;;
+spec_codes = &amp;apos;&amp;apos;;
+spec_values = &amp;apos;&amp;apos;;
+partBlock = &amp;apos;&amp;apos;;
+formattedStroke = &amp;quot;&amp;quot;;
+var tempdef = new Array();
+var tempspec_codes = &amp;apos;&amp;apos;;
+var tempspec_values = &amp;apos;&amp;apos;;
+var spec_codesArray = new Array();
+var spec_valuesArray = new Array();
+for (var i=0; i&amp;lt;partArray.length; i++) {
+oDom = oDomains.cpcarray[i];
+if(oDom.dtype != &amp;apos;D_CONSTANT&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;-&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;-X&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;(&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;)&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;,&amp;apos;)
+{
+partBlock = partArray[i];
+if (oDom.hasSelection()) {
+try {
+partBlock = DomInputValProcessor(oDom);
+if (partBlock == &amp;quot;&amp;quot;) {
+partBlock = partArray[i];
+}
+if (oDom.code == &amp;apos;STROKE&amp;apos;) {
+formattedStroke = partBlock;
+}
+} catch (myexcept) {
+}
+}
+if(specList != &amp;apos;&amp;apos;) {
+specList = specList + &amp;apos;,(&amp;quot;&amp;apos; + oDom.did + &amp;apos;&amp;quot;,&amp;quot;&amp;apos; + partBlock + &amp;apos;&amp;quot;)&amp;apos;;
+} else {
+specList = &amp;apos;(&amp;quot;&amp;apos; + oDom.did + &amp;apos;&amp;quot;,&amp;quot;&amp;apos; + partBlock + &amp;apos;&amp;quot;)&amp;apos;;
+}
+if (oDom.hasOwnProperty(&amp;apos;extraAttributes&amp;apos;)) {
+for (var xtraAtt in oDom.extraAttributes) {
+if (oDom.extraAttributes.hasOwnProperty(xtraAtt)) {
+specList = specList + &amp;apos;,(&amp;quot;&amp;apos; + xtraAtt + &amp;apos;&amp;quot;,&amp;quot;&amp;apos; + oDom.extraAttributes[xtraAtt] + &amp;apos;&amp;quot;)&amp;apos;;
+}
+}
+}
+}
+partBlock = partBlock + partArray[i];
+partID = partBlock + partArray[i];
+}
+specList = &amp;apos;(&amp;apos; + specList + &amp;apos;,(Output,2))&amp;apos;;
+return specList;
+}</jsInitConfig><optionSelectHTML>&amp;lt;script language=&amp;quot;JavaScript&amp;quot;&amp;gt;
+var oDomainToRuleMap;
+var aExRules = [];
+var oDomains = new DomainMap();
+var oEMsgStr = new MessageStore();
+var oDom;
+oDomains.addDomain(&amp;apos;VP&amp;apos;, &amp;apos;1&amp;apos;, 554334,554335,&amp;apos;D_CONSTANT&amp;apos;,&amp;apos;8781_1&amp;apos;, &amp;apos;&amp;apos;,null);
+oDom=oDomains.addDomain(&amp;apos;Model&amp;apos;, &amp;apos;2&amp;apos;, 554336,554337,&amp;apos;D_LIST&amp;apos;,&amp;apos;8781_2&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(554368,&amp;apos;5&amp;apos;,&amp;apos;5 (VP500)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(554369,&amp;apos;7&amp;apos;,&amp;apos;7 (VP700)&amp;apos;,&amp;apos;&amp;apos;);
+oDomains.addDomain(&amp;apos;44&amp;apos;, &amp;apos;3&amp;apos;, 554338,554339,&amp;apos;D_CONSTANT&amp;apos;,&amp;apos;8781_3&amp;apos;, &amp;apos;&amp;apos;,null);
+oDom=oDomains.addDomain(&amp;apos;Pilot&amp;apos;, &amp;apos;OPTION&amp;apos;, 554340,554341,&amp;apos;D_LIST&amp;apos;,&amp;apos;8781_4&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(554372,&amp;apos;&amp;apos;,&amp;apos;Internal Pilot&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(554373,&amp;apos;R&amp;apos;,&amp;apos;R (External Pilot)&amp;apos;,&amp;apos;&amp;apos;);
+oDomains.addDomain(&amp;apos;-&amp;apos;, &amp;apos;5&amp;apos;, 554342,554343,&amp;apos;D_CONSTANT&amp;apos;,&amp;apos;8781_5&amp;apos;, &amp;apos;&amp;apos;,null);
+oDomains.addDomain(&amp;apos;5&amp;apos;, &amp;apos;6&amp;apos;, 554344,554345,&amp;apos;D_CONSTANT&amp;apos;,&amp;apos;8781_6&amp;apos;, &amp;apos;&amp;apos;,null);
+oDom=oDomains.addDomain(&amp;apos;Electrical Entry&amp;apos;, &amp;apos;ENTRY&amp;apos;, 554346,554347,&amp;apos;D_LIST&amp;apos;,&amp;apos;8781_7&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(554374,&amp;apos;D&amp;apos;,&amp;apos;D (DIN Terminal)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(554375,&amp;apos;Y&amp;apos;,&amp;apos;Y [DIN (EN175301-803) Terminal]&amp;apos;,&amp;apos;&amp;apos;);
+oDomains.addDomain(&amp;apos;Z1&amp;apos;, &amp;apos;8&amp;apos;, 554348,554349,&amp;apos;D_CONSTANT&amp;apos;,&amp;apos;8781_8&amp;apos;, &amp;apos;&amp;apos;,null);
+oDomains.addDomain(&amp;apos;-&amp;apos;, &amp;apos;9&amp;apos;, 554350,554351,&amp;apos;D_CONSTANT&amp;apos;,&amp;apos;8781_9&amp;apos;, &amp;apos;&amp;apos;,null);
+oDom=oDomains.addDomain(&amp;apos;Port Size&amp;apos;, &amp;apos;10&amp;apos;, 554352,554353,&amp;apos;D_LIST&amp;apos;,&amp;apos;8781_10&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(554376,&amp;apos;03&amp;apos;,&amp;apos;03 (3/8\&amp;quot;)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(554377,&amp;apos;04&amp;apos;,&amp;apos;04 (1/2\&amp;quot;)&amp;apos;,&amp;apos;&amp;apos;);
+oDom=oDomains.addDomain(&amp;apos;Thread&amp;apos;, &amp;apos;THREAD&amp;apos;, 554354,554355,&amp;apos;D_LIST&amp;apos;,&amp;apos;8781_11&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(554378,&amp;apos;&amp;apos;,&amp;apos;Rc&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(554379,&amp;apos;F&amp;apos;,&amp;apos;F (G)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(554380,&amp;apos;N&amp;apos;,&amp;apos;N (NPT)&amp;apos;,&amp;apos;&amp;apos;);
+oDom=oDomains.addDomain(&amp;apos;-&amp;apos;, &amp;apos;12&amp;apos;, 554356,554357,&amp;apos;D_LIST&amp;apos;,&amp;apos;8781_12&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(554381,&amp;apos;&amp;apos;,&amp;apos;&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(554382,&amp;apos;-&amp;apos;,&amp;apos;-&amp;apos;,&amp;apos;&amp;apos;);
+oDom=oDomains.addDomain(&amp;apos;Switch Electrical Entry&amp;apos;, &amp;apos;SWITCH&amp;apos;, 554358,554359,&amp;apos;D_LIST&amp;apos;,&amp;apos;8781_13&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(554383,&amp;apos;&amp;apos;,&amp;apos;G 1/2, OMRON&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(554384,&amp;apos;M&amp;apos;,&amp;apos;M (M12 Connection, OMRON)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(554385,&amp;apos;S1&amp;apos;,&amp;apos;S1 (M12 Connection, Rockwell Automation)&amp;apos;,&amp;apos;&amp;apos;);
+oDom=oDomains.addDomain(&amp;apos;Check Valve&amp;apos;, &amp;apos;CHECK&amp;apos;, 554360,554361,&amp;apos;D_LIST&amp;apos;,&amp;apos;8781_14&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(554386,&amp;apos;&amp;apos;,&amp;apos;None&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(554387,&amp;apos;A&amp;apos;,&amp;apos;A (Applicable Tube O.D. &amp;#xf8;6)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(554388,&amp;apos;B&amp;apos;,&amp;apos;B (Applicable Tube O.D. &amp;#xf8;1/4\&amp;quot;)&amp;apos;,&amp;apos;&amp;apos;);
+oDom=oDomains.addDomain(&amp;apos;Throttle&amp;apos;, &amp;apos;THROTTLE&amp;apos;, 554362,554363,&amp;apos;D_LIST&amp;apos;,&amp;apos;8781_15&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(554389,&amp;apos;&amp;apos;,&amp;apos;Variable Throttle&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(554390,&amp;apos;10&amp;apos;,&amp;apos;10 (&amp;#xf8;1 Fixed Orifice)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(554391,&amp;apos;15&amp;apos;,&amp;apos;15 (&amp;#xf8;1.5 Fixed Orifice)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(554392,&amp;apos;20&amp;apos;,&amp;apos;20 (&amp;#xf8;2 Fixed Orifice)&amp;apos;,&amp;apos;&amp;apos;);
+oDomains.addDomain(&amp;apos;-&amp;apos;, &amp;apos;16&amp;apos;, 554364,554365,&amp;apos;D_CONSTANT&amp;apos;,&amp;apos;8781_16&amp;apos;, &amp;apos;&amp;apos;,null);
+oDom=oDomains.addDomain(&amp;apos;Max. Operating Pressure&amp;apos;, &amp;apos;PRESSURE&amp;apos;, 554366,554367,&amp;apos;D_LIST&amp;apos;,&amp;apos;8781_17&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(571108,&amp;apos;X555&amp;apos;,&amp;apos;X555 (0.7 MPa)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(571109,&amp;apos;X585&amp;apos;,&amp;apos;X585 (1.0 MPa)&amp;apos;,&amp;apos;&amp;apos;);
+aExRules[0] = new Rule(191991,0,2);
+aExRules[0].addMember(554356,1,554381);
+aExRules[0].addMember(554358,1,554384,554385);
+aExRules[1] = new Rule(191992,0,2);
+aExRules[1].addMember(554360,1,554387,554388);
+aExRules[1].addMember(554356,1,554381);
+aExRules[2] = new Rule(191993,0,2);
+aExRules[2].addMember(554362,1,554390,554391,554392);
+aExRules[2].addMember(554356,1,554381);
+aExRules[3] = new Rule(191994,0,2);
+aExRules[3].addMember(554360,1,554386);
+aExRules[3].addMember(554362,1,554389);
+aExRules[3].addMember(554356,1,554382);
+aExRules[3].addMember(554358,1,554383);
+aExRules[4] = new Rule(191995,0,2);
+aExRules[4].addMember(554352,1,554377);
+aExRules[4].addMember(554336,1,554368);
+aExRules[5] = new Rule(191996,0,2);
+aExRules[5].addMember(554352,1,554376);
+aExRules[5].addMember(554336,1,554369);
+aExRules[6] = new Rule(191997,0,2);
+aExRules[6].addMember(554360,1,554387,554388);
+aExRules[6].addMember(554340,1,554372);
+aExRules[7] = new Rule(191998,0,2);
+aExRules[7].addMember(554360,1,554387,554388);
+aExRules[7].addMember(554354,1,554379);
+aExRules[8] = new Rule(191999,0,2);
+aExRules[8].addMember(554360,1,554388);
+aExRules[8].addMember(554354,1,554378);
+aExRules[9] = new Rule(192000,0,2);
+aExRules[9].addMember(554360,1,554387);
+aExRules[9].addMember(554354,1,554380);
+aExRules[10] = new Rule(192002,0,2);
+aExRules[10].addMember(554362,1,554392);
+aExRules[10].addMember(554336,1,554368);
+oDomainToRuleMap = oDomains.createDomainToRuleMap(aExRules);
+&amp;lt;/script&amp;gt;
+&amp;lt;fieldset&amp;gt;&amp;lt;legend class=&amp;quot;med&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;Select Product Options&amp;lt;/strong&amp;gt;&amp;lt;/legend&amp;gt;
+&amp;lt;table id=&amp;quot;configuration_area&amp;quot; class=&amp;quot;small&amp;quot; width=&amp;quot;100%&amp;quot;&amp;gt;
+&amp;lt;tr style=&amp;quot;background-color: transparent;&amp;quot;&amp;gt;&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td colspan=2 align=&amp;quot;left&amp;quot; class=&amp;quot;tiny&amp;quot;&amp;gt;Select values from the drop down lists or make appropriate selections to configure the part number.&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_554336&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Model &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_554336&amp;quot; id=&amp;quot;dom_554336&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(554336, this); formChange(554336);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554368&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 5 (VP500) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554369&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 7 (VP700) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_554336&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_554336&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(554336, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_554336&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_554340&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Pilot &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_554340&amp;quot; id=&amp;quot;dom_554340&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(554340, this); formChange(554340);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554372&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Internal Pilot &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554373&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R (External Pilot) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_554340&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_554340&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(554340, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_554340&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_554346&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Electrical Entry &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_554346&amp;quot; id=&amp;quot;dom_554346&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(554346, this); formChange(554346);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554374&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; D (DIN Terminal) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554375&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Y [DIN (EN175301-803) Terminal] &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_554346&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_554346&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(554346, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_554346&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_554352&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Port Size &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_554352&amp;quot; id=&amp;quot;dom_554352&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(554352, this); formChange(554352);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554376&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 03 (3/8&amp;quot;) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554377&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 04 (1/2&amp;quot;) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_554352&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_554352&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(554352, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_554352&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_554354&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Thread &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_554354&amp;quot; id=&amp;quot;dom_554354&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(554354, this); formChange(554354);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554378&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Rc &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554379&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; F (G) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554380&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; N (NPT) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_554354&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_554354&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(554354, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_554354&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_554358&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Switch Electrical Entry &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_554358&amp;quot; id=&amp;quot;dom_554358&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(554358, this); formChange(554358);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554383&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; G 1/2, OMRON &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554384&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; M (M12 Connection, OMRON) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554385&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; S1 (M12 Connection, Rockwell Automation) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_554358&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_554358&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(554358, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_554358&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_554360&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Check Valve &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_554360&amp;quot; id=&amp;quot;dom_554360&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(554360, this); formChange(554360);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554386&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; None &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554387&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A (Applicable Tube O.D. &amp;#xf8;6) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554388&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; B (Applicable Tube O.D. &amp;#xf8;1/4&amp;quot;) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_554360&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_554360&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(554360, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_554360&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_554362&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Throttle &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_554362&amp;quot; id=&amp;quot;dom_554362&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(554362, this); formChange(554362);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554389&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Variable Throttle &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554390&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 10 (&amp;#xf8;1 Fixed Orifice) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554391&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 15 (&amp;#xf8;1.5 Fixed Orifice) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;554392&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 20 (&amp;#xf8;2 Fixed Orifice) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_554362&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_554362&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(554362, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_554362&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_554366&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Max. Operating Pressure &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_554366&amp;quot; id=&amp;quot;dom_554366&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(554366, this); formChange(554366);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;571108&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; X555 (0.7 MPa) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;571109&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; X585 (1.0 MPa) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_554366&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_554366&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(554366, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_554366&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr style=&amp;quot;background-color: transparent;&amp;quot;&amp;gt;&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td colspan=&amp;quot;2&amp;quot; align=&amp;quot;left&amp;quot; nowrap&amp;gt;Options in: &amp;lt;ul style=&amp;quot;margin-top:0px; margin-bottom:0px;&amp;quot;&amp;gt; &amp;lt;li&amp;gt;&amp;lt;span style=&amp;quot;color: #777777;&amp;quot;&amp;gt;Gray&amp;lt;/span&amp;gt; are not compatible with other selected option value.&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;span style=&amp;quot;color: #CC0000;&amp;quot;&amp;gt;Red&amp;lt;/span&amp;gt; conflict with another selected option value.&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;span style=&amp;quot;color: #AA9900;&amp;quot;&amp;gt;Amber&amp;lt;/span&amp;gt; are not recommended.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt;
+&amp;lt;/fieldset&amp;gt;
+&amp;lt;/form&amp;gt;</optionSelectHTML><partNumberHTML>&amp;lt;form id=&amp;quot;form&amp;quot; name=&amp;quot;form&amp;quot; action=&amp;quot;&amp;quot;&amp;gt;
+&amp;lt;fieldset&amp;gt;
+&amp;lt;legend class=&amp;quot;med&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;Configuration Options&amp;lt;/strong&amp;gt;&amp;lt;/legend&amp;gt;
+&amp;lt;table width=&amp;quot;100%&amp;quot; border=&amp;quot;0&amp;quot; cellspacing=&amp;quot;0&amp;quot; cellpadding=&amp;quot;2&amp;quot;&amp;gt;
+&amp;lt;tr&amp;gt;&amp;lt;td class=&amp;quot;tiny&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/td&amp;gt;&amp;lt;td align=&amp;quot;right&amp;quot; class=&amp;quot;tiny&amp;quot; id=&amp;quot;cpn_state&amp;quot; style=&amp;quot;font-weight:bold;&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;span id=&amp;quot;cpn_partnumber&amp;quot; class=&amp;quot;large&amp;quot; &amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td rowspan=&amp;quot;1&amp;quot; align=&amp;quot;right&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;images/NA/tilda_32.gif&amp;quot; alt=&amp;quot;&amp;quot; name=&amp;quot;status_img&amp;quot; id=&amp;quot;status_img&amp;quot; width=&amp;quot;32&amp;quot; height=&amp;quot;32&amp;quot; border=&amp;quot;0&amp;quot;&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt;
+&amp;lt;/fieldset&amp;gt;</partNumberHTML><seriesName></seriesName><configuration_doc></configuration_doc><eds_file></eds_file><relatedProducts><relatedProductsCategory><name>Airline Equipment</name><code>AIRLINE_EQUIPMENT</code><id></id><relatedProductsItems><relatedProductsItem><name>AC20-B to AC60-B, Air Filter, Regulator and Lubricator</name><seoslug>AC20-B-to-AC60-B-Air-Filter-Regulator-and-Lubricator</seoslug><imageS>ARL.jpg</imageS><id>128660</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Tubing</name><code>TUBING</code><id></id><relatedProductsItems><relatedProductsItem><name>TIA, Inch Size Nylon Tubing</name><seoslug>TIA-Inch-Size-Nylon-Tubing</seoslug><imageS>3080.jpg</imageS><id>22102</id></relatedProductsItem><relatedProductsItem><name>TU, Polyurethane Tubing, Metric Size</name><seoslug>TU-Polyurethane-Tubing-Metric-Size</seoslug><imageS>tu.jpg</imageS><id>22082</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Fittings</name><code>FITTINGS</code><id></id><relatedProductsItems><relatedProductsItem><name>KQ2, One-touch Fitting for Inch Size Tube, UNF, NPT Connection Thread</name><seoslug>KQ2-One-touch-Fitting-for-Inch-Size-Tube-UNF-NPT-Connection-Thread</seoslug><imageS>3001_US.jpg</imageS><id>87071</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Linear Actuators</name><code>LINEAR_ACTUATORS</code><id></id><relatedProductsItems><relatedProductsItem><name>C(D)Q2-Z, Compact Cylinder, Double Acting Single Rod</name><seoslug>C(D)Q2-Z-Compact-Cylinder-Double-Acting-Single-Rod</seoslug><imageS>Compact-Air-Cylinders-Double-Acting-Single-Rod-CDQ2B40-40DZ-and-CQ2B25-30DZ-2031M.jpg</imageS><id>74838</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Tubing PS</name><code>PS_TUBING</code><id></id><relatedProductsItems><relatedProductsItem><name>TIA, Inch Size Nylon Tubing</name><seoslug>TIA-Inch-Size-Nylon-Tubing</seoslug><imageS>3080.jpg</imageS><id>22102</id></relatedProductsItem><relatedProductsItem><name>TU, Polyurethane Tubing, Metric Size</name><seoslug>TU-Polyurethane-Tubing-Metric-Size</seoslug><imageS>tu.jpg</imageS><id>22082</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory></relatedProducts></configurableData></branchCategory>

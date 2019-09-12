@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<branchCategory xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><name>Auto Switch, Reed Switch, General Purpose</name><seoslug>Auto-Switch-Reed-General-Purpose~30776</seoslug><imageS>8545.jpg</imageS><imageM>8545.jpg</imageM><imageL>8545.jpg</imageL><iso_symbol></iso_symbol><series_catalog>AutoSw.pdf</series_catalog><description>SMC offers a variety of auto switches for actuators and air grippers.&amp;#xa0; Reed and solid state switches are available in a general purpose type or with 2-color indication, which allows the optimum operating position to be determined by the color of the light.&amp;#xa0; Solid state switches are also available in 2-color indication with diagnostic output, water resistant 2-color indication, built-in OFF-delay timer (200 ms), magnetic field resistant, heat resistant and wide range detection configurations.&amp;#xa0; Various lead wire lengths are available.</description><bullets>&amp;lt;UL&amp;gt;
+&amp;lt;LI&amp;gt;Reed type auto switches
+&amp;lt;LI&amp;gt;General purpose
+&amp;lt;LI&amp;gt;Band, rail, tie-rod, and direct mounting styles
+&amp;lt;LI&amp;gt;Electrical entry: grommet, connector, terminal conduit, DIN terminal&amp;lt;/LI&amp;gt;&amp;lt;/UL&amp;gt;</bullets><preferredproduct>not-used-at-this-time</preferredproduct><breadCrumbs><breadCrumb><name>Actuators</name><seoslug>Actuators</seoslug><id>19461</id></breadCrumb><breadCrumb><name>Actuator Accessories</name><seoslug>Actuator-Accessories</seoslug><id>20666</id></breadCrumb><breadCrumb><name>Auto Switch</name><seoslug>Auto-Switch</seoslug><id>20728</id></breadCrumb><breadCrumb><name>Reed and Solid State</name><seoslug>Reed-and-Solid-State</seoslug><id>30774</id></breadCrumb><breadCrumb><name>Reed, General Purpose</name><seoslug>Reed-General-Purpose</seoslug><id>29493</id></breadCrumb></breadCrumbs><hideFromProduction>0</hideFromProduction><branchItems/><configurableData><jsInitConfig>var locale_code = &amp;apos;en&amp;apos;;
+var catalog_code = &amp;apos;smc&amp;apos;;
+var logcat_code = &amp;apos;SMCUS&amp;apos;;
+var userID = -1;
+var pattern_code = &amp;apos;SWRGP8545&amp;apos;;
+var partno_notvalid_text = &amp;apos;The part number needs to be valid in order to view/download.&amp;apos;;
+var rodEndArray = new Array(1);
+var cntArray = 0;
+var base_linecode = &amp;quot;ACC&amp;quot;;
+var series = &amp;quot;Reed and Solid State&amp;quot;;
+var catalog_dsn = &amp;quot;CC_catalog_smc&amp;quot;;
+var product_id = 30776;
+var hostPages = &amp;quot;/cc_host/pages/&amp;quot;;
+var RodBaseUnits = &amp;quot;INCH&amp;quot;;
+var reqpartno_buttontext = &amp;quot;Request part Number&amp;quot;;
+var ordcustrodends_linktext = &amp;quot;Ordering Custom Rod Ends&amp;quot;;
+var ordcustrodend_msgtext = &amp;quot;The &amp;lt;b&amp;gt;Request Part Number&amp;lt;/b&amp;gt; button is available for registered users when you have completed entering all of the required data fields with valid data. When you press this button your part will be saved in favorites with a special part number. You can used this part number to place an order.&amp;lt;br&amp;gt;&amp;lt;ol compact &amp;gt;&amp;lt;li&amp;gt;SMC will use standard values if no dimension values are entered.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;The same tolerances and finishes used for the standard product will apply. If different tolerances or finish is necessary, please contact SMC; your order may be evaluated for submission as a Request for Special (RFS). &amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;In the case of single acting, spring extend or spring return type cylinders, enter the dimensions when the cylinder is in the retracted position (i.e., the rod is retracted).&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;In the case of double rod type cylinder, you must specify whether the modified rod end modifications apply to both rod ends or only one end.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;When a rod-end modification is specified for a double-rod cylinder, one rod end modification is allowed. This may be applied to one rod end, or both rod ends. If dissimilar modifications are required for each end, please contact SMC; your order may be evaluated for submission as a Request for Special (RFS).&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;quot;;
+var addOptsDomArray = new Array();
+function Init() {
+gConstraintFormID = &amp;apos;form&amp;apos;;
+oStateMessages[&amp;apos;Complete&amp;apos;] = &amp;apos;Part Number is &amp;lt;span style=\&amp;quot;color: #00A000\&amp;quot;&amp;gt;Complete&amp;lt;/span&amp;gt;&amp;apos;;
+oStateMessages[&amp;apos;Partial&amp;apos;] = &amp;apos;Part Number is &amp;lt;span style=\&amp;quot;color: #CCAA00\&amp;quot;&amp;gt;Partial&amp;lt;/span&amp;gt;&amp;apos;;
+oStateMessages[&amp;apos;Invalid&amp;apos;] = &amp;apos;Part Number is &amp;lt;span style=\&amp;quot;color: #AA0000\&amp;quot;&amp;gt;Invalid&amp;lt;/span&amp;gt;&amp;apos;;
+showDomainMessages = smcShowDomainMessages;
+var formEle = document.getElementById(&amp;apos;form&amp;apos;);
+var formOffSetWidth = 0;
+for(i = 0; i &amp;lt; formEle.length; i++) {
+if(formEle.elements[i].type == &amp;quot;select-one&amp;quot;) {
+if(formEle.elements[i].offsetWidth &amp;lt; formOffSetWidth) {
+formEle.elements[i].style.width = &amp;quot;100%&amp;quot;;
+}
+if(formOffSetWidth == 0) {
+formOffSetWidth = formEle.elements[i].offsetWidth;
+}
+}
+if (formEle.elements[i].getAttribute(&amp;apos;selectBoxOptions&amp;apos;)) {
+var idname = formEle.elements[i].id;
+createEditableSelect(formEle.elements[i]);
+formatStandardValues(idname);
+document.onclick = selectBox_hideOptions;
+}
+}
+if (typeof InitConfig != &amp;quot;undefined&amp;quot;) {
+InitConfig();
+}
+oDomains.setNoPick(&amp;quot;&amp;quot;);
+oDomains.setGrammarFilter(&amp;apos;^[\-]&amp;apos;);
+formChange = customFormChange;
+formChange(0);
+if (typeof PostInitConfig != &amp;quot;undefined&amp;quot;) {
+PostInitConfig();
+}
+}
+function InitConfig() {
+}
+function PostInitConfig() {
+if (!hasXOptions) {
+}
+}
+var confirmwin;
+var configName = &amp;quot;&amp;quot;;
+function requestRodEndPartNumber() {
+confirmwin = open(&amp;quot;blank.htm&amp;quot;, &amp;quot;confirmWindow&amp;quot;, &amp;quot;menubar=no,resizable=yes,toolbar=no,titlebar=no,width=660,height=700,scrollbars=yes&amp;quot;);
+var destinSel = document.getElementById(&amp;apos;destination&amp;apos;);
+var oForm = document.forms[&amp;apos;requestrodendform&amp;apos;];
+oForm.xml.value = oDomains.configStateToXML();
+oForm.specList.value = buildSpecList();
+oForm.patternCode.value = &amp;quot;SWRGP8545&amp;quot;;
+oForm.favFolderID.value = destinSel.options[destinSel.selectedIndex].value;
+oForm.configState.value = oDomains.getConstraintEngineState();
+oForm.newExtCode.value = currentPartNumber;
+oForm.configName.value = currentPartNumber;
+oForm.action = &amp;quot;/cc_host/pages/public/custom/smc/services/confirmRodendSS.cfm&amp;quot;;
+oForm.target = &amp;quot;confirmWindow&amp;quot;;
+oForm.doaction.value = &amp;apos;request&amp;apos;;
+oForm.formattedStroke.value = formattedStroke;
+oForm.submit();
+setTimeout(&amp;quot;confirmwin.focus();&amp;quot;,200);
+}
+var formattedStroke = &amp;quot;&amp;quot;;
+function buildSpecList() {
+partArray = oDomains.getPartNumber();
+specList = &amp;apos;&amp;apos;;
+spec_codes = &amp;apos;&amp;apos;;
+spec_values = &amp;apos;&amp;apos;;
+partBlock = &amp;apos;&amp;apos;;
+formattedStroke = &amp;quot;&amp;quot;;
+var tempdef = new Array();
+var tempspec_codes = &amp;apos;&amp;apos;;
+var tempspec_values = &amp;apos;&amp;apos;;
+var spec_codesArray = new Array();
+var spec_valuesArray = new Array();
+for (var i=0; i&amp;lt;partArray.length; i++) {
+oDom = oDomains.cpcarray[i];
+if(oDom.dtype != &amp;apos;D_CONSTANT&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;-&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;-X&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;(&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;)&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;,&amp;apos;)
+{
+partBlock = partArray[i];
+if (oDom.hasSelection()) {
+try {
+partBlock = DomInputValProcessor(oDom);
+if (partBlock == &amp;quot;&amp;quot;) {
+partBlock = partArray[i];
+}
+if (oDom.code == &amp;apos;STROKE&amp;apos;) {
+formattedStroke = partBlock;
+}
+} catch (myexcept) {
+}
+}
+if(specList != &amp;apos;&amp;apos;) {
+specList = specList + &amp;apos;,(&amp;quot;&amp;apos; + oDom.did + &amp;apos;&amp;quot;,&amp;quot;&amp;apos; + partBlock + &amp;apos;&amp;quot;)&amp;apos;;
+} else {
+specList = &amp;apos;(&amp;quot;&amp;apos; + oDom.did + &amp;apos;&amp;quot;,&amp;quot;&amp;apos; + partBlock + &amp;apos;&amp;quot;)&amp;apos;;
+}
+if (oDom.hasOwnProperty(&amp;apos;extraAttributes&amp;apos;)) {
+for (var xtraAtt in oDom.extraAttributes) {
+if (oDom.extraAttributes.hasOwnProperty(xtraAtt)) {
+specList = specList + &amp;apos;,(&amp;quot;&amp;apos; + xtraAtt + &amp;apos;&amp;quot;,&amp;quot;&amp;apos; + oDom.extraAttributes[xtraAtt] + &amp;apos;&amp;quot;)&amp;apos;;
+}
+}
+}
+}
+partBlock = partBlock + partArray[i];
+partID = partBlock + partArray[i];
+}
+specList = &amp;apos;(&amp;apos; + specList + &amp;apos;,(Output,2))&amp;apos;;
+return specList;
+}</jsInitConfig><optionSelectHTML>&amp;lt;script language=&amp;quot;JavaScript&amp;quot;&amp;gt;
+var oDomainToRuleMap;
+var aExRules = [];
+var oDomains = new DomainMap();
+var oEMsgStr = new MessageStore();
+var oDom;
+oDomains.addDomain(&amp;apos;D-&amp;apos;, &amp;apos;1&amp;apos;, 202693,202694,&amp;apos;D_CONSTANT&amp;apos;,&amp;apos;8545_1&amp;apos;, &amp;apos;&amp;apos;,null);
+oDom=oDomains.addDomain(&amp;apos;Band Mount&amp;apos;, &amp;apos;2&amp;apos;, 202695,202696,&amp;apos;D_LIST&amp;apos;,&amp;apos;8545_2&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(202705,&amp;apos;&amp;apos;,&amp;apos;None&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202714,&amp;apos;A33&amp;apos;,&amp;apos;A33--Reed, 24 VDC max, LED, Terminal&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202716,&amp;apos;A33A&amp;apos;,&amp;apos;A33A--Reed, 24 VDC max , LED, Terminal&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202715,&amp;apos;A34&amp;apos;,&amp;apos;A34--Reed, 24VDC max, 200VAC max, LED, Terminal&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202717,&amp;apos;A34A&amp;apos;,&amp;apos;A34A--Reed, 24VDC max, 200VAC max, LED, Terminal&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202718,&amp;apos;A44&amp;apos;,&amp;apos;A44--Reed, 24VDC max, 200VAC max, LED, DIN&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202719,&amp;apos;A44A&amp;apos;,&amp;apos;A44A--Reed, 24VDC max, 200VAC max, LED, DIN&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202709,&amp;apos;B53&amp;apos;,&amp;apos;B53--Reed, 24VDC max, LED&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202710,&amp;apos;B54&amp;apos;,&amp;apos;B54--Reed, 24VDC max, 200VAC max, LED&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202711,&amp;apos;B64&amp;apos;,&amp;apos;B64--Reed, 24VDC max, 200VAC max&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202706,&amp;apos;C73&amp;apos;,&amp;apos;C73--Reed, 24VDC max, 100VAC max, LED&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202712,&amp;apos;C73C&amp;apos;,&amp;apos;C73C--Reed, 24VDC max, LED, Connector&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202707,&amp;apos;C76&amp;apos;,&amp;apos;C76--Reed, 8VDC max, LED&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202708,&amp;apos;C80&amp;apos;,&amp;apos;C80--Reed, 24V to 100V AC/DC&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202713,&amp;apos;C80C&amp;apos;,&amp;apos;C80C--Reed, 24V AC/DC, Connector&amp;apos;,&amp;apos;&amp;apos;);
+oDom=oDomains.addDomain(&amp;apos;Rail Mount&amp;apos;, &amp;apos;3&amp;apos;, 202697,202698,&amp;apos;D_LIST&amp;apos;,&amp;apos;8545_3&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(202720,&amp;apos;&amp;apos;,&amp;apos;None&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202721,&amp;apos;A72&amp;apos;,&amp;apos;A72--Reed, 200VAC max, LED, Lead Wire, Vertical&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202722,&amp;apos;A72H&amp;apos;,&amp;apos;A72H--Reed, 200VAC max, LED, Lead Wire, Horizontal&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202723,&amp;apos;A73&amp;apos;,&amp;apos;A73--Reed, 24VDC max, 100VAC max, LED, Lead Wire, Vertical&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202724,&amp;apos;A73C&amp;apos;,&amp;apos;A73C--Reed, 24VDC max, LED, Connector, Vertical&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202725,&amp;apos;A73H&amp;apos;,&amp;apos;A73H--Reed, 24VDC max, 100VAC max, LED, Lead Wire, Horizontal&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202726,&amp;apos;A76H&amp;apos;,&amp;apos;A76H--Reed, 8VDC max, LED, Lead Wire, Horizontal&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202727,&amp;apos;A80&amp;apos;,&amp;apos;A80--Reed, 24V to 100V AC/DC, Lead Wire, Vertical&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202728,&amp;apos;A80C&amp;apos;,&amp;apos;A80C--Reed, 24V AC/DC, Connector, Vertical&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202729,&amp;apos;A80H&amp;apos;,&amp;apos;A80H--Reed, 24V to 100V AC/DC, Lead Wire, Horizontal&amp;apos;,&amp;apos;&amp;apos;);
+oDom=oDomains.addDomain(&amp;apos;Tie-rod Mount&amp;apos;, &amp;apos;4&amp;apos;, 202699,202700,&amp;apos;D_LIST&amp;apos;,&amp;apos;8545_4&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(202730,&amp;apos;&amp;apos;,&amp;apos;None&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202731,&amp;apos;A33C-4&amp;apos;,&amp;apos;A33C-4--Reed, 24VDC max, LED, Connector (for 40mm Bore)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202732,&amp;apos;A33C-5&amp;apos;,&amp;apos;A33C-5--Reed, 24VDC max, LED, Connector (for 50mm Bore)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202733,&amp;apos;A33C-6&amp;apos;,&amp;apos;A33C-6--Reed, 24VDC max, LED, Connector (for 63mm Bore)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202734,&amp;apos;AC33C-8&amp;apos;,&amp;apos;A33C-8--Reed, 24VDC max, LED, Connector (for 80mm Bore)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202735,&amp;apos;A33C-10&amp;apos;,&amp;apos;A33C-10--Reed, 24VDC max, LED, Connector (for 100mm Bore)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202736,&amp;apos;AC34C-4&amp;apos;,&amp;apos;A34C-4--Reed, 24 to 200VAC, LED, Connector (for 40mm Bore)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202737,&amp;apos;A34C-5&amp;apos;,&amp;apos;A34C-5--Reed, 24 to 200VAC, LED, Connector (for 50mm Bore)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202738,&amp;apos;AC34C-6&amp;apos;,&amp;apos;A34C-6--Reed, 24 to 200VAC, LED, Connector (for 63mm Bore)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202739,&amp;apos;A34C-8&amp;apos;,&amp;apos;A34C-8--Reed, 24 to 200VAC, LED, Connector (for 80mm Bore)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202740,&amp;apos;AC34C-10&amp;apos;,&amp;apos;A34C-10--Reed, 24 to 200VAC, LED, Connector (for 100mm Bore)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202741,&amp;apos;A44C-4&amp;apos;,&amp;apos;A44C-4--Reed, 24VDC max, 200VAC max, LED, Connector (for 40mm Bore)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202742,&amp;apos;A44C-5&amp;apos;,&amp;apos;A44C-5--Reed, 24VDC max, 200VAC max, LED, Connector (for 50mm Bore)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202743,&amp;apos;A44C-6&amp;apos;,&amp;apos;A44C-6--Reed, 24VDC max, 200VAC max, LED, Connector (for 63mm Bore)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202744,&amp;apos;A44C-8&amp;apos;,&amp;apos;A44C-8--Reed, 24VDC max, 200VAC max, LED, Connector (for 80mm Bore)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202745,&amp;apos;A44C-10&amp;apos;,&amp;apos;A44C-10--Reed, 24VDC max, 200VAC max, LED, Connector (for 100mm Bore)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202746,&amp;apos;A53&amp;apos;,&amp;apos;A53--Reed, 24VDC max, LED&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202747,&amp;apos;A54&amp;apos;,&amp;apos;A54--Reed, 24VDC max, 200VAC max, AC Volt &amp;lt;200, LED&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202748,&amp;apos;A56&amp;apos;,&amp;apos;A56--Reed, 8VDC max, LED&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202749,&amp;apos;A64&amp;apos;,&amp;apos;A64--Reed, 24VDC max, 24 to 200VAC&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202750,&amp;apos;A67&amp;apos;,&amp;apos;A67--Reed, 24VDC max&amp;apos;,&amp;apos;&amp;apos;);
+oDom=oDomains.addDomain(&amp;apos;Direct Mount&amp;apos;, &amp;apos;5&amp;apos;, 202701,202702,&amp;apos;D_LIST&amp;apos;,&amp;apos;8545_5&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(202751,&amp;apos;&amp;apos;,&amp;apos;None&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202756,&amp;apos;A90&amp;apos;,&amp;apos;A90--Reed, 24V to 100V AC/DC, Horizontal&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202757,&amp;apos;A90V&amp;apos;,&amp;apos;A90V--Reed, 24V to 100V AC/DC, Vertical&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202758,&amp;apos;A93&amp;apos;,&amp;apos;A93--Reed, 24VDC max, 100VAC max, LED, Horizontal&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202759,&amp;apos;A93V&amp;apos;,&amp;apos;A93V--Reed, 24VDC max, 100VAC max, LED, Vertical&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202760,&amp;apos;A96&amp;apos;,&amp;apos;A96--Reed, 8VDC max, LED, Horizontal&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202761,&amp;apos;A96V&amp;apos;,&amp;apos;A96V--Reed, 8VDC max, LED, Vertical&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202752,&amp;apos;90&amp;apos;,&amp;apos;90--Reed, 5V to 24V AC/DC , Horizontal&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202753,&amp;apos;90A&amp;apos;,&amp;apos;90A--Reed, 5V to 100V AC/DC, Horizontal&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202754,&amp;apos;93A&amp;apos;,&amp;apos;93A--Reed, 24VDC max, 100VAC max, LED, Horizontal&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202755,&amp;apos;97&amp;apos;,&amp;apos;97--Reed, 24VDC, LED, Horizontal&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202762,&amp;apos;E73A&amp;apos;,&amp;apos;E73A--Reed, 24VDC max, 100VAC max, LED, 2 Wire&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202763,&amp;apos;E76A&amp;apos;,&amp;apos;E76A--Reed, 8VDC max, LED, 3 Wire&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202764,&amp;apos;E80A&amp;apos;,&amp;apos;E80A--Reed, 24V to 100V AC/DC, 2 Wire&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202765,&amp;apos;R731&amp;apos;,&amp;apos;R731--Reed, 24VDC max, 100VAC max, LED, Horizontal, Right Hand Mounting&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202766,&amp;apos;R731C&amp;apos;,&amp;apos;R731C--Reed, 24VDC max, LED, Connector, Horizontal, Right Hand Mounting&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202767,&amp;apos;R732&amp;apos;,&amp;apos;R732--Reed, 24VDC max, 100VAC max, LED, Horizontal, Left Hand Mounting&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202768,&amp;apos;R732C&amp;apos;,&amp;apos;R732C--Reed, 24VDC max, LED, Connector, Horizontal, Left Hand Mounting&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202769,&amp;apos;R801&amp;apos;,&amp;apos;R801--Reed, 24V to 100V AC/DC, 2 wire, Right Hand Mounting&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202770,&amp;apos;R801C&amp;apos;,&amp;apos;R801C--Reed, 24V AC/DC, Connector, Horizontal, Right Hand Mounting&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202771,&amp;apos;R802&amp;apos;,&amp;apos;R802--Reed, 24V to 100V AC/DC, 2 wire, Left Hand Mounting&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202772,&amp;apos;R802C&amp;apos;,&amp;apos;R802C--Reed, 24V AC/DC, Connector, Horizontal, Left Hand Mounting&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202773,&amp;apos;Z73&amp;apos;,&amp;apos;Z73--Reed, 24VDC max, 100VAC max, 2 Wire, LED&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202774,&amp;apos;Z76&amp;apos;,&amp;apos;Z76--Reed, 8VDC max, 3 Wire, LED&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202775,&amp;apos;Z80&amp;apos;,&amp;apos;Z80--Reed, 24V to 100V AC/DC, 2 Wire&amp;apos;,&amp;apos;&amp;apos;);
+oDom=oDomains.addDomain(&amp;apos;Lead Wire&amp;apos;, &amp;apos;LEADWIRELENGTH&amp;apos;, 202703,202704,&amp;apos;D_LIST&amp;apos;,&amp;apos;8545_6&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(202776,&amp;apos;&amp;apos;,&amp;apos;0.5m (Or None - See Series Catalog)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202777,&amp;apos;L&amp;apos;,&amp;apos;L (3m)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202779,&amp;apos;N&amp;apos;,&amp;apos;N (No Lead Wire)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(202778,&amp;apos;Z&amp;apos;,&amp;apos;Z (5m)&amp;apos;,&amp;apos;&amp;apos;);
+oDom=oDomains.addDomain(&amp;apos;-&amp;apos;, &amp;apos;7&amp;apos;, 324286,324287,&amp;apos;D_LIST&amp;apos;,&amp;apos;8545_7&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(324290,&amp;apos;&amp;apos;,&amp;apos;&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(324291,&amp;apos;-&amp;apos;,&amp;apos;-&amp;apos;,&amp;apos;&amp;apos;);
+oDom=oDomains.addDomain(&amp;apos;Option&amp;apos;, &amp;apos;8&amp;apos;, 324288,324289,&amp;apos;D_LIST&amp;apos;,&amp;apos;8545_8&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(324292,&amp;apos;&amp;apos;,&amp;apos;None&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(324293,&amp;apos;900&amp;apos;,&amp;apos;900 (Compatible w/90-)&amp;apos;,&amp;apos;&amp;apos;);
+aExRules[0] = new Rule(128780,14379,2);
+aExRules[0].addMember(202703,1,202779);
+aExRules[0].addMember(202695,1,202706,202707,202708,202709,202710,202711,202714,202715,202716,202717,202718,202719);
+aExRules[1] = new Rule(128781,14380,2);
+aExRules[1].addMember(202703,1,202778);
+aExRules[1].addMember(202695,1,202707,202708,202711,202714,202715,202716,202717,202718,202719);
+aExRules[2] = new Rule(128782,14381,2);
+aExRules[2].addMember(202703,1,202777);
+aExRules[2].addMember(202695,1,202714,202715,202716,202717,202718,202719);
+aExRules[3] = new Rule(128783,14392,2);
+aExRules[3].addMember(202701,1,202752,202753,202754,202755,202756,202757,202758,202759,202760,202761,202762,202763,202764,202765,202766,202767,202768,202769,202770,202771,202772,202773,202774,202775);
+aExRules[3].addMember(202699,1,202731,202732,202733,202734,202735,202736,202737,202738,202739,202740,202741,202742,202743,202744,202745,202746,202747,202748,202749,202750);
+aExRules[4] = new Rule(128784,14388,2);
+aExRules[4].addMember(202697,1,202721,202722);
+aExRules[4].addMember(202703,1,202778,202779);
+aExRules[5] = new Rule(128785,14389,2);
+aExRules[5].addMember(202697,1,202723,202725,202726,202727,202729);
+aExRules[5].addMember(202703,1,202779);
+aExRules[6] = new Rule(128786,14390,2);
+aExRules[6].addMember(202697,1,202729);
+aExRules[6].addMember(202703,1,202778);
+aExRules[7] = new Rule(128787,14383,2);
+aExRules[7].addMember(202701,1,202751);
+aExRules[7].addMember(202697,1,202720);
+aExRules[7].addMember(202699,1,202730);
+aExRules[7].addMember(202695,1,202705);
+aExRules[8] = new Rule(128788,14378,2);
+aExRules[8].addMember(202701,1,202752,202753,202754,202755,202756,202757,202758,202759,202760,202761,202762,202763,202764,202765,202766,202767,202768,202769,202770,202771,202772,202773,202774,202775);
+aExRules[8].addMember(202695,1,202706,202707,202708,202709,202710,202711,202712,202713,202714,202715,202716,202717,202718,202719);
+aExRules[9] = new Rule(128789,14384,2);
+aExRules[9].addMember(202699,1,202731,202732,202733,202734,202735,202736,202737,202738,202739,202740,202741,202742,202743,202744,202745,202746,202747,202748,202749,202750);
+aExRules[9].addMember(202695,1,202706,202707,202708,202709,202710,202711,202712,202713,202714,202715,202716,202717,202718,202719);
+aExRules[10] = new Rule(128790,14393,2);
+aExRules[10].addMember(202703,1,202777,202778,202779);
+aExRules[10].addMember(202699,1,202731,202732,202733,202734,202735,202736,202737,202738,202739,202740,202741,202742,202743,202744,202745);
+aExRules[11] = new Rule(128791,14394,2);
+aExRules[11].addMember(202703,1,202779);
+aExRules[11].addMember(202699,1,202746,202747,202748,202749,202750);
+aExRules[12] = new Rule(128792,14395,2);
+aExRules[12].addMember(202703,1,202778);
+aExRules[12].addMember(202699,1,202748,202749,202750);
+aExRules[13] = new Rule(128793,14391,2);
+aExRules[13].addMember(202697,1,202721,202722,202723,202724,202725,202726,202727,202728,202729);
+aExRules[13].addMember(202699,1,202731,202732,202733,202734,202735,202736,202737,202738,202739,202740,202741,202742,202743,202744,202745,202746,202747,202748,202749,202750);
+aExRules[14] = new Rule(128794,14385,2);
+aExRules[14].addMember(202701,1,202752,202753,202754,202755,202756,202757,202758,202759,202760,202761,202762,202763,202764,202765,202767,202769,202771,202773,202774,202775);
+aExRules[14].addMember(202703,1,202779);
+aExRules[15] = new Rule(128795,14386,2);
+aExRules[15].addMember(202701,1,202757,202759,202760,202761,202763,202764,202769,202770,202771,202772,202774,202775);
+aExRules[15].addMember(202703,1,202778);
+aExRules[16] = new Rule(128796,14387,2);
+aExRules[16].addMember(202701,1,202752,202753,202754,202755,202756,202757,202758,202759,202760,202761,202762,202763,202764,202765,202766,202767,202768,202769,202770,202771,202772,202773,202774,202775);
+aExRules[16].addMember(202697,1,202721,202722,202723,202724,202725,202726,202727,202728,202729);
+aExRules[17] = new Rule(128797,14382,2);
+aExRules[17].addMember(202697,1,202721,202722,202723,202724,202725,202726,202727,202728,202729);
+aExRules[17].addMember(202695,1,202706,202707,202708,202709,202710,202711,202712,202713,202714,202715,202716,202717,202718,202719);
+aExRules[18] = new Rule(144655,0,2);
+aExRules[18].addMember(324288,1,324293);
+aExRules[18].addMember(324286,1,324290);
+aExRules[19] = new Rule(144656,0,2);
+aExRules[19].addMember(324288,1,324292);
+aExRules[19].addMember(324286,1,324291);
+aExRules[20] = new Rule(144657,23701,2);
+aExRules[20].addMember(202695,1,202706,202707,202708,202709,202710,202711,202712,202713,202714,202715,202716,202717,202718,202719);
+aExRules[20].addMember(324288,1,324293);
+aExRules[21] = new Rule(144658,23702,2);
+aExRules[21].addMember(202697,1,202721,202722,202723,202724,202725,202726,202727,202728,202729);
+aExRules[21].addMember(324288,1,324293);
+aExRules[22] = new Rule(144659,23703,2);
+aExRules[22].addMember(202699,1,202731,202732,202733,202734,202735,202736,202737,202738,202739,202740,202741,202742,202743,202744,202745,202746,202747,202748,202749,202750);
+aExRules[22].addMember(324288,1,324293);
+aExRules[23] = new Rule(144660,23704,2);
+aExRules[23].addMember(202701,1,202752,202753,202754,202755,202757,202758,202759,202760,202761,202762,202763,202764,202765,202766,202767,202768,202769,202770,202771,202772,202773,202774);
+aExRules[23].addMember(324288,1,324293);
+aExRules[24] = new Rule(144661,23705,2);
+aExRules[24].addMember(202701,1,202756);
+aExRules[24].addMember(202703,1,202776,202778,202779);
+aExRules[24].addMember(324288,1,324293);
+aExRules[25] = new Rule(144662,23706,2);
+aExRules[25].addMember(202701,1,202775);
+aExRules[25].addMember(202703,1,202776,202778,202779);
+aExRules[25].addMember(324288,1,324293);
+oEMsgStr.addMessage(14378,&amp;apos;A band mount auto switch selection requires a direct mount selection of \&amp;quot;None\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(14379,&amp;apos;The selected auto switch is not available with the selected lead wire&amp;apos;);
+oEMsgStr.addMessage(14380,&amp;apos;The selected auto switch is not available with the selected lead wire&amp;apos;);
+oEMsgStr.addMessage(14381,&amp;apos;The selected auto switch is not available with the selected lead wire&amp;apos;);
+oEMsgStr.addMessage(14382,&amp;apos;A band mount auto switch selection requires rail mount selection of \&amp;quot;None\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(14383,&amp;apos;One auto switch must be selected&amp;apos;);
+oEMsgStr.addMessage(14384,&amp;apos;A band mount auto switch selection requires tie-rod mount selection of \&amp;quot;None\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(14385,&amp;apos;The selected auto switch is not available with the selected lead wire&amp;apos;);
+oEMsgStr.addMessage(14386,&amp;apos;The selected auto switch is not available with the selected lead wire&amp;apos;);
+oEMsgStr.addMessage(14387,&amp;apos;A rail mount auto switch selection requires a direction mount selection of \&amp;quot;None\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(14388,&amp;apos;The selected auto switch is not available with the selected lead wire&amp;apos;);
+oEMsgStr.addMessage(14389,&amp;apos;The selected auto switch is not available with the selected lead wire&amp;apos;);
+oEMsgStr.addMessage(14390,&amp;apos;A80H is not available with the selected lead wire&amp;apos;);
+oEMsgStr.addMessage(14391,&amp;apos;A rail mount auto switch selection requires a tie-rod mount selection of \&amp;quot;None\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(14392,&amp;apos;A tie-rod mount selection requires a direct mount selection of \&amp;quot;None\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(14393,&amp;apos;The selected auto switch is not available with the selected lead wire&amp;apos;);
+oEMsgStr.addMessage(14394,&amp;apos;The selected auto switch is not available with the selected lead wire&amp;apos;);
+oEMsgStr.addMessage(14395,&amp;apos;The selected auto switch is not available with the selected lead wire&amp;apos;);
+oEMsgStr.addMessage(23701,&amp;apos;Auto switch and option are not compatible&amp;apos;);
+oEMsgStr.addMessage(23702,&amp;apos;Auto switch and option are not compatible&amp;apos;);
+oEMsgStr.addMessage(23703,&amp;apos;Auto switch and option are not compatible&amp;apos;);
+oEMsgStr.addMessage(23704,&amp;apos;Auto switch and option are not compatible&amp;apos;);
+oEMsgStr.addMessage(23705,&amp;apos;Selected combination is not compatible&amp;apos;);
+oEMsgStr.addMessage(23706,&amp;apos;Selected combination is not compatible&amp;apos;);
+oDomainToRuleMap = oDomains.createDomainToRuleMap(aExRules);
+&amp;lt;/script&amp;gt;
+&amp;lt;fieldset&amp;gt;&amp;lt;legend class=&amp;quot;med&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;Select Product Options&amp;lt;/strong&amp;gt;&amp;lt;/legend&amp;gt;
+&amp;lt;table id=&amp;quot;configuration_area&amp;quot; class=&amp;quot;small&amp;quot; width=&amp;quot;100%&amp;quot;&amp;gt;
+&amp;lt;tr style=&amp;quot;background-color: transparent;&amp;quot;&amp;gt;&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td colspan=2 align=&amp;quot;left&amp;quot; class=&amp;quot;tiny&amp;quot;&amp;gt;Select values from the drop down lists or make appropriate selections to configure the part number.&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_202695&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Band Mount &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_202695&amp;quot; id=&amp;quot;dom_202695&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(202695, this); formChange(202695);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202705&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; None &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202714&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A33--Reed, 24 VDC max, LED, Terminal &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202716&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A33A--Reed, 24 VDC max , LED, Terminal &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202715&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A34--Reed, 24VDC max, 200VAC max, LED, Terminal &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202717&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A34A--Reed, 24VDC max, 200VAC max, LED, Terminal &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202718&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A44--Reed, 24VDC max, 200VAC max, LED, DIN &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202719&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A44A--Reed, 24VDC max, 200VAC max, LED, DIN &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202709&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; B53--Reed, 24VDC max, LED &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202710&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; B54--Reed, 24VDC max, 200VAC max, LED &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202711&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; B64--Reed, 24VDC max, 200VAC max &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202706&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; C73--Reed, 24VDC max, 100VAC max, LED &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202712&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; C73C--Reed, 24VDC max, LED, Connector &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202707&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; C76--Reed, 8VDC max, LED &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202708&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; C80--Reed, 24V to 100V AC/DC &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202713&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; C80C--Reed, 24V AC/DC, Connector &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_202695&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_202695&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(202695, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_202695&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_202697&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Rail Mount &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_202697&amp;quot; id=&amp;quot;dom_202697&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(202697, this); formChange(202697);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202720&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; None &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202721&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A72--Reed, 200VAC max, LED, Lead Wire, Vertical &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202722&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A72H--Reed, 200VAC max, LED, Lead Wire, Horizontal &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202723&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A73--Reed, 24VDC max, 100VAC max, LED, Lead Wire, Vertical &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202724&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A73C--Reed, 24VDC max, LED, Connector, Vertical &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202725&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A73H--Reed, 24VDC max, 100VAC max, LED, Lead Wire, Horizontal &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202726&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A76H--Reed, 8VDC max, LED, Lead Wire, Horizontal &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202727&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A80--Reed, 24V to 100V AC/DC, Lead Wire, Vertical &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202728&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A80C--Reed, 24V AC/DC, Connector, Vertical &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202729&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A80H--Reed, 24V to 100V AC/DC, Lead Wire, Horizontal &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_202697&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_202697&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(202697, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_202697&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_202699&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Tie-rod Mount &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_202699&amp;quot; id=&amp;quot;dom_202699&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(202699, this); formChange(202699);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202730&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; None &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202731&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A33C-4--Reed, 24VDC max, LED, Connector (for 40mm Bore) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202732&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A33C-5--Reed, 24VDC max, LED, Connector (for 50mm Bore) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202733&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A33C-6--Reed, 24VDC max, LED, Connector (for 63mm Bore) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202734&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A33C-8--Reed, 24VDC max, LED, Connector (for 80mm Bore) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202735&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A33C-10--Reed, 24VDC max, LED, Connector (for 100mm Bore) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202736&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A34C-4--Reed, 24 to 200VAC, LED, Connector (for 40mm Bore) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202737&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A34C-5--Reed, 24 to 200VAC, LED, Connector (for 50mm Bore) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202738&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A34C-6--Reed, 24 to 200VAC, LED, Connector (for 63mm Bore) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202739&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A34C-8--Reed, 24 to 200VAC, LED, Connector (for 80mm Bore) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202740&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A34C-10--Reed, 24 to 200VAC, LED, Connector (for 100mm Bore) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202741&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A44C-4--Reed, 24VDC max, 200VAC max, LED, Connector (for 40mm Bore) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202742&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A44C-5--Reed, 24VDC max, 200VAC max, LED, Connector (for 50mm Bore) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202743&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A44C-6--Reed, 24VDC max, 200VAC max, LED, Connector (for 63mm Bore) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202744&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A44C-8--Reed, 24VDC max, 200VAC max, LED, Connector (for 80mm Bore) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202745&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A44C-10--Reed, 24VDC max, 200VAC max, LED, Connector (for 100mm Bore) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202746&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A53--Reed, 24VDC max, LED &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202747&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A54--Reed, 24VDC max, 200VAC max, AC Volt &amp;amp;lt;200, LED &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202748&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A56--Reed, 8VDC max, LED &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202749&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A64--Reed, 24VDC max, 24 to 200VAC &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202750&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A67--Reed, 24VDC max &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_202699&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_202699&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(202699, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_202699&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_202701&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Direct Mount &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_202701&amp;quot; id=&amp;quot;dom_202701&amp;quot; class=&amp;quot;small&amp;quot; onchange=&amp;quot;setDomainValue(202701, this); formChange(202701);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202751&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; None &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202756&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A90--Reed, 24V to 100V AC/DC, Horizontal &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202757&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A90V--Reed, 24V to 100V AC/DC, Vertical &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202758&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A93--Reed, 24VDC max, 100VAC max, LED, Horizontal &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202759&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A93V--Reed, 24VDC max, 100VAC max, LED, Vertical &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202760&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A96--Reed, 8VDC max, LED, Horizontal &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202761&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A96V--Reed, 8VDC max, LED, Vertical &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202752&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 90--Reed, 5V to 24V AC/DC , Horizontal &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202753&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 90A--Reed, 5V to 100V AC/DC, Horizontal &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202754&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 93A--Reed, 24VDC max, 100VAC max, LED, Horizontal &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202755&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 97--Reed, 24VDC, LED, Horizontal &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202762&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; E73A--Reed, 24VDC max, 100VAC max, LED, 2 Wire &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202763&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; E76A--Reed, 8VDC max, LED, 3 Wire &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202764&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; E80A--Reed, 24V to 100V AC/DC, 2 Wire &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202765&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R731--Reed, 24VDC max, 100VAC max, LED, Horizontal, Right Hand Mounting &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202766&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R731C--Reed, 24VDC max, LED, Connector, Horizontal, Right Hand Mounting &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202767&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R732--Reed, 24VDC max, 100VAC max, LED, Horizontal, Left Hand Mounting &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202768&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R732C--Reed, 24VDC max, LED, Connector, Horizontal, Left Hand Mounting &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202769&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R801--Reed, 24V to 100V AC/DC, 2 wire, Right Hand Mounting &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202770&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R801C--Reed, 24V AC/DC, Connector, Horizontal, Right Hand Mounting &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202771&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R802--Reed, 24V to 100V AC/DC, 2 wire, Left Hand Mounting &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202772&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R802C--Reed, 24V AC/DC, Connector, Horizontal, Left Hand Mounting &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202773&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Z73--Reed, 24VDC max, 100VAC max, 2 Wire, LED &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202774&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Z76--Reed, 8VDC max, 3 Wire, LED &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202775&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Z80--Reed, 24V to 100V AC/DC, 2 Wire &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_202701&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_202701&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(202701, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_202701&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_202703&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Lead Wire &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_202703&amp;quot; id=&amp;quot;dom_202703&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(202703, this); formChange(202703);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202776&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 0.5m (Or None - See Series Catalog) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202777&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; L (3m) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202779&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; N (No Lead Wire) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;202778&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Z (5m) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_202703&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_202703&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(202703, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_202703&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_324288&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Option &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_324288&amp;quot; id=&amp;quot;dom_324288&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(324288, this); formChange(324288);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;324292&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; None &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;324293&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 900 (Compatible w/90-) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_324288&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_324288&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(324288, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_324288&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr style=&amp;quot;background-color: transparent;&amp;quot;&amp;gt;&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td colspan=&amp;quot;2&amp;quot; align=&amp;quot;left&amp;quot; nowrap&amp;gt;Options in: &amp;lt;ul style=&amp;quot;margin-top:0px; margin-bottom:0px;&amp;quot;&amp;gt; &amp;lt;li&amp;gt;&amp;lt;span style=&amp;quot;color: #777777;&amp;quot;&amp;gt;Gray&amp;lt;/span&amp;gt; are not compatible with other selected option value.&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;span style=&amp;quot;color: #CC0000;&amp;quot;&amp;gt;Red&amp;lt;/span&amp;gt; conflict with another selected option value.&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;span style=&amp;quot;color: #AA9900;&amp;quot;&amp;gt;Amber&amp;lt;/span&amp;gt; are not recommended.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt;
+&amp;lt;/fieldset&amp;gt;
+&amp;lt;/form&amp;gt;</optionSelectHTML><partNumberHTML>&amp;lt;form id=&amp;quot;form&amp;quot; name=&amp;quot;form&amp;quot; action=&amp;quot;&amp;quot;&amp;gt;
+&amp;lt;fieldset&amp;gt;
+&amp;lt;legend class=&amp;quot;med&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;Configuration Options&amp;lt;/strong&amp;gt;&amp;lt;/legend&amp;gt;
+&amp;lt;table width=&amp;quot;100%&amp;quot; border=&amp;quot;0&amp;quot; cellspacing=&amp;quot;0&amp;quot; cellpadding=&amp;quot;2&amp;quot;&amp;gt;
+&amp;lt;tr&amp;gt;&amp;lt;td class=&amp;quot;tiny&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/td&amp;gt;&amp;lt;td align=&amp;quot;right&amp;quot; class=&amp;quot;tiny&amp;quot; id=&amp;quot;cpn_state&amp;quot; style=&amp;quot;font-weight:bold;&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;span id=&amp;quot;cpn_partnumber&amp;quot; class=&amp;quot;large&amp;quot; &amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td rowspan=&amp;quot;1&amp;quot; align=&amp;quot;right&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;images/NA/tilda_32.gif&amp;quot; alt=&amp;quot;&amp;quot; name=&amp;quot;status_img&amp;quot; id=&amp;quot;status_img&amp;quot; width=&amp;quot;32&amp;quot; height=&amp;quot;32&amp;quot; border=&amp;quot;0&amp;quot;&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt;
+&amp;lt;/fieldset&amp;gt;</partNumberHTML><seriesName></seriesName><configuration_doc></configuration_doc><eds_file></eds_file><relatedProducts><relatedProductsCategory><name>Airline Equipment</name><code>AIRLINE_EQUIPMENT</code><id></id><relatedProductsItems><relatedProductsItem><name>AC20-B to AC60-B, Air Filter, Regulator and Lubricator</name><seoslug>AC20-B-to-AC60-B-Air-Filter-Regulator-and-Lubricator</seoslug><imageS>ARL.jpg</imageS><id>128660</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Tubing</name><code>TUBING</code><id></id><relatedProductsItems><relatedProductsItem><name>TIA, Inch Size Nylon Tubing</name><seoslug>TIA-Inch-Size-Nylon-Tubing</seoslug><imageS>3080.jpg</imageS><id>22102</id></relatedProductsItem><relatedProductsItem><name>TU, Polyurethane Tubing, Metric Size</name><seoslug>TU-Polyurethane-Tubing-Metric-Size</seoslug><imageS>tu.jpg</imageS><id>22082</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Fittings</name><code>FITTINGS</code><id></id><relatedProductsItems><relatedProductsItem><name>KQ2, One-touch Fitting for Inch Size Tube, UNF, NPT Connection Thread</name><seoslug>KQ2-One-touch-Fitting-for-Inch-Size-Tube-UNF-NPT-Connection-Thread</seoslug><imageS>3001_US.jpg</imageS><id>87071</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Valves &amp;amp; Manifolds</name><code>VALVES_MANIFOLDS</code><id></id><relatedProductsItems><relatedProductsItem><name>SY3000, 5 Port Solenoid Valve, All Types - New Style</name><seoslug>SY3000-5-Port-Solenoid-Valve-All-Types-New-Style</seoslug><imageS>1800A.jpg</imageS><id>50600</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Cylinder Parts &amp;amp; Accessories</name><code>CYLINDER_PARTS_ACCESSORIES</code><id></id><relatedProductsItems><relatedProductsItem><name>Auto Switch, Solid State, General Purpose</name><seoslug>Auto-Switch-Solid-State-General-Purpose</seoslug><imageS>8545Ab.jpg</imageS><id>30777</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Tubing PS</name><code>PS_TUBING</code><id></id><relatedProductsItems><relatedProductsItem><name>TIA, Inch Size Nylon Tubing</name><seoslug>TIA-Inch-Size-Nylon-Tubing</seoslug><imageS>3080.jpg</imageS><id>22102</id></relatedProductsItem><relatedProductsItem><name>TU, Polyurethane Tubing, Metric Size</name><seoslug>TU-Polyurethane-Tubing-Metric-Size</seoslug><imageS>tu.jpg</imageS><id>22082</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory></relatedProducts></configurableData></branchCategory>

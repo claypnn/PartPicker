@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<branchCategory xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><name>TIUB, Inch Size Polyurethane Tubing</name><seoslug>TIUB-Inch-Size-Polyurethane-Tubing~22078</seoslug><imageS>3082.jpg</imageS><imageM>3082.jpg</imageM><imageL>3082.jpg</imageL><iso_symbol>tube.gif</iso_symbol><series_catalog>Tubing.pdf</series_catalog><description>&amp;lt;P&amp;gt;SMC&amp;apos;s series&amp;#xa0;of polyurethane tubing is manufactured from Polyether&amp;#xa0;resin, insuring the longest possible tube life due to its immunity to hydrolysis. Series TIUB inch size tubing is available in 8 &amp;quot;quick ship&amp;quot; colors, in standard stocked lengths of 66ft, 100ft, 500ft, 1000ft and 1640ft.&amp;#xa0;&amp;#xa0;There are&amp;#xa0;21 additional standard colors to suit special needs.&amp;#xa0;&amp;lt;/P&amp;gt;</description><bullets></bullets><preferredproduct>not-used-at-this-time</preferredproduct><breadCrumbs><breadCrumb><name>Connectors</name><seoslug>Connectors</seoslug><id>21836</id></breadCrumb><breadCrumb><name>Tubing</name><seoslug>Tubing</seoslug><id>22059</id></breadCrumb><breadCrumb><name>Polyurethane Tubing</name><seoslug>Polyurethane-Tubing</seoslug><id>22061</id></breadCrumb><breadCrumb><name>TIUB</name><seoslug>TIUB</seoslug><id>22075</id></breadCrumb><breadCrumb><name>Polyurethane, Inch</name><seoslug>Polyurethane-Inch</seoslug><id>12601</id></breadCrumb></breadCrumbs><hideFromProduction>0</hideFromProduction><branchItems/><configurableData><jsInitConfig>var locale_code = &amp;apos;en&amp;apos;;
+var catalog_code = &amp;apos;smc&amp;apos;;
+var logcat_code = &amp;apos;SMCUS&amp;apos;;
+var userID = -1;
+var pattern_code = &amp;apos;tiub3082&amp;apos;;
+var partno_notvalid_text = &amp;apos;The part number needs to be valid in order to view/download.&amp;apos;;
+var rodEndArray = new Array(1);
+var cntArray = 0;
+var base_linecode = &amp;quot;CNN&amp;quot;;
+var series = &amp;quot;TIUB&amp;quot;;
+var catalog_dsn = &amp;quot;CC_catalog_smc&amp;quot;;
+var product_id = 22078;
+var hostPages = &amp;quot;/cc_host/pages/&amp;quot;;
+var RodBaseUnits = &amp;quot;INCH&amp;quot;;
+var reqpartno_buttontext = &amp;quot;Request part Number&amp;quot;;
+var ordcustrodends_linktext = &amp;quot;Ordering Custom Rod Ends&amp;quot;;
+var ordcustrodend_msgtext = &amp;quot;The &amp;lt;b&amp;gt;Request Part Number&amp;lt;/b&amp;gt; button is available for registered users when you have completed entering all of the required data fields with valid data. When you press this button your part will be saved in favorites with a special part number. You can used this part number to place an order.&amp;lt;br&amp;gt;&amp;lt;ol compact &amp;gt;&amp;lt;li&amp;gt;SMC will use standard values if no dimension values are entered.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;The same tolerances and finishes used for the standard product will apply. If different tolerances or finish is necessary, please contact SMC; your order may be evaluated for submission as a Request for Special (RFS). &amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;In the case of single acting, spring extend or spring return type cylinders, enter the dimensions when the cylinder is in the retracted position (i.e., the rod is retracted).&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;In the case of double rod type cylinder, you must specify whether the modified rod end modifications apply to both rod ends or only one end.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;When a rod-end modification is specified for a double-rod cylinder, one rod end modification is allowed. This may be applied to one rod end, or both rod ends. If dissimilar modifications are required for each end, please contact SMC; your order may be evaluated for submission as a Request for Special (RFS).&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;quot;;
+var addOptsDomArray = new Array();
+function Init() {
+gConstraintFormID = &amp;apos;form&amp;apos;;
+oStateMessages[&amp;apos;Complete&amp;apos;] = &amp;apos;Part Number is &amp;lt;span style=\&amp;quot;color: #00A000\&amp;quot;&amp;gt;Complete&amp;lt;/span&amp;gt;&amp;apos;;
+oStateMessages[&amp;apos;Partial&amp;apos;] = &amp;apos;Part Number is &amp;lt;span style=\&amp;quot;color: #CCAA00\&amp;quot;&amp;gt;Partial&amp;lt;/span&amp;gt;&amp;apos;;
+oStateMessages[&amp;apos;Invalid&amp;apos;] = &amp;apos;Part Number is &amp;lt;span style=\&amp;quot;color: #AA0000\&amp;quot;&amp;gt;Invalid&amp;lt;/span&amp;gt;&amp;apos;;
+showDomainMessages = smcShowDomainMessages;
+var formEle = document.getElementById(&amp;apos;form&amp;apos;);
+var formOffSetWidth = 0;
+for(i = 0; i &amp;lt; formEle.length; i++) {
+if(formEle.elements[i].type == &amp;quot;select-one&amp;quot;) {
+if(formEle.elements[i].offsetWidth &amp;lt; formOffSetWidth) {
+formEle.elements[i].style.width = &amp;quot;100%&amp;quot;;
+}
+if(formOffSetWidth == 0) {
+formOffSetWidth = formEle.elements[i].offsetWidth;
+}
+}
+if (formEle.elements[i].getAttribute(&amp;apos;selectBoxOptions&amp;apos;)) {
+var idname = formEle.elements[i].id;
+createEditableSelect(formEle.elements[i]);
+formatStandardValues(idname);
+document.onclick = selectBox_hideOptions;
+}
+}
+if (typeof InitConfig != &amp;quot;undefined&amp;quot;) {
+InitConfig();
+}
+oDomains.setNoPick(&amp;quot;&amp;quot;);
+oDomains.setGrammarFilter(&amp;apos;^[\-]&amp;apos;);
+formChange = customFormChange;
+formChange(0);
+if (typeof PostInitConfig != &amp;quot;undefined&amp;quot;) {
+PostInitConfig();
+}
+}
+function InitConfig() {
+}
+function PostInitConfig() {
+if (!hasXOptions) {
+}
+}
+var confirmwin;
+var configName = &amp;quot;&amp;quot;;
+function requestRodEndPartNumber() {
+confirmwin = open(&amp;quot;blank.htm&amp;quot;, &amp;quot;confirmWindow&amp;quot;, &amp;quot;menubar=no,resizable=yes,toolbar=no,titlebar=no,width=660,height=700,scrollbars=yes&amp;quot;);
+var destinSel = document.getElementById(&amp;apos;destination&amp;apos;);
+var oForm = document.forms[&amp;apos;requestrodendform&amp;apos;];
+oForm.xml.value = oDomains.configStateToXML();
+oForm.specList.value = buildSpecList();
+oForm.patternCode.value = &amp;quot;tiub3082&amp;quot;;
+oForm.favFolderID.value = destinSel.options[destinSel.selectedIndex].value;
+oForm.configState.value = oDomains.getConstraintEngineState();
+oForm.newExtCode.value = currentPartNumber;
+oForm.configName.value = currentPartNumber;
+oForm.action = &amp;quot;/cc_host/pages/public/custom/smc/services/confirmRodendSS.cfm&amp;quot;;
+oForm.target = &amp;quot;confirmWindow&amp;quot;;
+oForm.doaction.value = &amp;apos;request&amp;apos;;
+oForm.formattedStroke.value = formattedStroke;
+oForm.submit();
+setTimeout(&amp;quot;confirmwin.focus();&amp;quot;,200);
+}
+var formattedStroke = &amp;quot;&amp;quot;;
+function buildSpecList() {
+partArray = oDomains.getPartNumber();
+specList = &amp;apos;&amp;apos;;
+spec_codes = &amp;apos;&amp;apos;;
+spec_values = &amp;apos;&amp;apos;;
+partBlock = &amp;apos;&amp;apos;;
+formattedStroke = &amp;quot;&amp;quot;;
+var tempdef = new Array();
+var tempspec_codes = &amp;apos;&amp;apos;;
+var tempspec_values = &amp;apos;&amp;apos;;
+var spec_codesArray = new Array();
+var spec_valuesArray = new Array();
+for (var i=0; i&amp;lt;partArray.length; i++) {
+oDom = oDomains.cpcarray[i];
+if(oDom.dtype != &amp;apos;D_CONSTANT&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;-&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;-X&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;(&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;)&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;,&amp;apos;)
+{
+partBlock = partArray[i];
+if (oDom.hasSelection()) {
+try {
+partBlock = DomInputValProcessor(oDom);
+if (partBlock == &amp;quot;&amp;quot;) {
+partBlock = partArray[i];
+}
+if (oDom.code == &amp;apos;STROKE&amp;apos;) {
+formattedStroke = partBlock;
+}
+} catch (myexcept) {
+}
+}
+if(specList != &amp;apos;&amp;apos;) {
+specList = specList + &amp;apos;,(&amp;quot;&amp;apos; + oDom.did + &amp;apos;&amp;quot;,&amp;quot;&amp;apos; + partBlock + &amp;apos;&amp;quot;)&amp;apos;;
+} else {
+specList = &amp;apos;(&amp;quot;&amp;apos; + oDom.did + &amp;apos;&amp;quot;,&amp;quot;&amp;apos; + partBlock + &amp;apos;&amp;quot;)&amp;apos;;
+}
+if (oDom.hasOwnProperty(&amp;apos;extraAttributes&amp;apos;)) {
+for (var xtraAtt in oDom.extraAttributes) {
+if (oDom.extraAttributes.hasOwnProperty(xtraAtt)) {
+specList = specList + &amp;apos;,(&amp;quot;&amp;apos; + xtraAtt + &amp;apos;&amp;quot;,&amp;quot;&amp;apos; + oDom.extraAttributes[xtraAtt] + &amp;apos;&amp;quot;)&amp;apos;;
+}
+}
+}
+}
+partBlock = partBlock + partArray[i];
+partID = partBlock + partArray[i];
+}
+specList = &amp;apos;(&amp;apos; + specList + &amp;apos;,(Output,2))&amp;apos;;
+return specList;
+}</jsInitConfig><optionSelectHTML>&amp;lt;script language=&amp;quot;JavaScript&amp;quot;&amp;gt;
+var oDomainToRuleMap;
+var aExRules = [];
+var oDomains = new DomainMap();
+var oEMsgStr = new MessageStore();
+var oDom;
+oDomains.addDomain(&amp;apos;TIUB&amp;apos;, &amp;apos;0&amp;apos;, 161718,161717,&amp;apos;D_CONSTANT&amp;apos;,&amp;apos;TIUB&amp;apos;, &amp;apos;&amp;apos;,null);
+oDom=oDomains.addDomain(&amp;apos;Size&amp;apos;, &amp;apos;1&amp;apos;, 161704,161703,&amp;apos;D_LIST&amp;apos;,&amp;apos;3082_1&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(161705,&amp;apos;01&amp;apos;,&amp;apos;01 (OD&amp;#xd8;1/8\&amp;quot; ID&amp;#xd8;0.08\&amp;quot;)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(161706,&amp;apos;05&amp;apos;,&amp;apos;05 (OD&amp;#xd8;3/16\&amp;quot; ID&amp;#xd8;0.13\&amp;quot;)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(161707,&amp;apos;07&amp;apos;,&amp;apos;07 (OD&amp;#xd8;1/4\&amp;quot; ID&amp;#xd8;0.17\&amp;quot;)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(161708,&amp;apos;11&amp;apos;,&amp;apos;11 (OD&amp;#xd8;3/8\&amp;quot;, ID&amp;#xd8;0.25\&amp;quot;)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(161709,&amp;apos;13&amp;apos;,&amp;apos;13 (OD&amp;#xd8;1/2\&amp;quot;, ID&amp;#xd8;0.33\&amp;quot;)&amp;apos;,&amp;apos;&amp;apos;);
+oDom=oDomains.addDomain(&amp;apos;Color&amp;apos;, &amp;apos;2&amp;apos;, 161711,161710,&amp;apos;D_LIST&amp;apos;,&amp;apos;3082_2&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(161712,&amp;apos;B&amp;apos;,&amp;apos;B (Black)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(161713,&amp;apos;BU&amp;apos;,&amp;apos;BU (Blue)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284278,&amp;apos;BU1&amp;apos;,&amp;apos;BU1 (Blue, Solid)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284279,&amp;apos;BU2&amp;apos;,&amp;apos;BU2 (TR Blue)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284280,&amp;apos;BU3&amp;apos;,&amp;apos;BU3 (Medium Blue)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284281,&amp;apos;BR1&amp;apos;,&amp;apos;BR1 (Brown, Solid)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284272,&amp;apos;C&amp;apos;,&amp;apos;C (Clear)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284273,&amp;apos;G&amp;apos;,&amp;apos;G (Green)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284282,&amp;apos;G1&amp;apos;,&amp;apos;G1 (Green, Solid)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284283,&amp;apos;G2&amp;apos;,&amp;apos;G2 (TR Green)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284284,&amp;apos;G3&amp;apos;,&amp;apos;G3 (Neon Green)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284285,&amp;apos;G4&amp;apos;,&amp;apos;G4 (Dark Green)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284286,&amp;apos;GR1&amp;apos;,&amp;apos;GR1 (Gray, Solid)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284287,&amp;apos;GR2&amp;apos;,&amp;apos;GR2 (Light Gray, Solid)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284288,&amp;apos;P1&amp;apos;,&amp;apos;P1 (Neon Pink)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284289,&amp;apos;PU1&amp;apos;,&amp;apos;PU1 (Purple, Solid)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284290,&amp;apos;PU2&amp;apos;,&amp;apos;PU2 (TR Purple)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284274,&amp;apos;R&amp;apos;,&amp;apos;R (Red)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284291,&amp;apos;R1&amp;apos;,&amp;apos;R1 (Red, Solid)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284292,&amp;apos;R2&amp;apos;,&amp;apos;R2 (TR Red)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284293,&amp;apos;S1&amp;apos;,&amp;apos;S1 (Silver)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284275,&amp;apos;W&amp;apos;,&amp;apos;W (White)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284276,&amp;apos;Y&amp;apos;,&amp;apos;Y (Yellow)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284277,&amp;apos;YR&amp;apos;,&amp;apos;YR (Orange)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284294,&amp;apos;Y1&amp;apos;,&amp;apos;Y1 (Yellow, Solid)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284295,&amp;apos;Y2&amp;apos;,&amp;apos;Y2 (TR Yellow)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284296,&amp;apos;Y3&amp;apos;,&amp;apos;Y3 (Neon Yellow)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284297,&amp;apos;YR1&amp;apos;,&amp;apos;YR1 (TR Orange)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284298,&amp;apos;YR2&amp;apos;,&amp;apos;YR2 (Neon Orange)&amp;apos;,&amp;apos;&amp;apos;);
+oDomains.addDomain(&amp;apos;-&amp;apos;, &amp;apos;3&amp;apos;, 161720,161719,&amp;apos;D_CONSTANT&amp;apos;,&amp;apos;308214338-&amp;apos;, &amp;apos;&amp;apos;,null);
+oDom=oDomains.addDomain(&amp;apos;Roll Length&amp;apos;, &amp;apos;4&amp;apos;, 161715,161714,&amp;apos;D_LIST&amp;apos;,&amp;apos;3082_4&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(161716,&amp;apos;20&amp;apos;,&amp;apos;20 [20m Roll (66 ft)]&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284299,&amp;apos;33&amp;apos;,&amp;apos;33 (100 ft)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284300,&amp;apos;153&amp;apos;,&amp;apos;153 (500 ft)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284301,&amp;apos;305&amp;apos;,&amp;apos;305 (1000 ft)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(284302,&amp;apos;500&amp;apos;,&amp;apos;500 [1640 ft (Size 1/8, 3/16, 1/4)]&amp;apos;,&amp;apos;&amp;apos;);
+aExRules[0] = new Rule(134894,18654,2);
+aExRules[0].addMember(161704,1,161708,161709);
+aExRules[0].addMember(161715,1,284302);
+oEMsgStr.addMessage(18654,&amp;apos;500 meter not available as standard on the selected size&amp;apos;);
+oDomainToRuleMap = oDomains.createDomainToRuleMap(aExRules);
+&amp;lt;/script&amp;gt;
+&amp;lt;fieldset&amp;gt;&amp;lt;legend class=&amp;quot;med&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;Select Product Options&amp;lt;/strong&amp;gt;&amp;lt;/legend&amp;gt;
+&amp;lt;table id=&amp;quot;configuration_area&amp;quot; class=&amp;quot;small&amp;quot; width=&amp;quot;100%&amp;quot;&amp;gt;
+&amp;lt;tr style=&amp;quot;background-color: transparent;&amp;quot;&amp;gt;&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td colspan=2 align=&amp;quot;left&amp;quot; class=&amp;quot;tiny&amp;quot;&amp;gt;Select values from the drop down lists or make appropriate selections to configure the part number.&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_161704&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Size &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_161704&amp;quot; id=&amp;quot;dom_161704&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(161704, this); formChange(161704);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;161705&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 01 (OD&amp;#xd8;1/8&amp;quot; ID&amp;#xd8;0.08&amp;quot;) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;161706&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 05 (OD&amp;#xd8;3/16&amp;quot; ID&amp;#xd8;0.13&amp;quot;) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;161707&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 07 (OD&amp;#xd8;1/4&amp;quot; ID&amp;#xd8;0.17&amp;quot;) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;161708&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 11 (OD&amp;#xd8;3/8&amp;quot;, ID&amp;#xd8;0.25&amp;quot;) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;161709&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 13 (OD&amp;#xd8;1/2&amp;quot;, ID&amp;#xd8;0.33&amp;quot;) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_161704&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_161704&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(161704, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_161704&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_161711&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Color &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_161711&amp;quot; id=&amp;quot;dom_161711&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(161711, this); formChange(161711);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;161712&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; B (Black) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;161713&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; BU (Blue) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284278&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; BU1 (Blue, Solid) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284279&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; BU2 (TR Blue) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284280&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; BU3 (Medium Blue) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284281&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; BR1 (Brown, Solid) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284272&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; C (Clear) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284273&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; G (Green) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284282&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; G1 (Green, Solid) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284283&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; G2 (TR Green) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284284&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; G3 (Neon Green) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284285&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; G4 (Dark Green) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284286&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; GR1 (Gray, Solid) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284287&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; GR2 (Light Gray, Solid) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284288&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; P1 (Neon Pink) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284289&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; PU1 (Purple, Solid) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284290&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; PU2 (TR Purple) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284274&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R (Red) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284291&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R1 (Red, Solid) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284292&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R2 (TR Red) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284293&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; S1 (Silver) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284275&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; W (White) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284276&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Y (Yellow) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284277&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; YR (Orange) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284294&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Y1 (Yellow, Solid) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284295&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Y2 (TR Yellow) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284296&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Y3 (Neon Yellow) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284297&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; YR1 (TR Orange) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284298&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; YR2 (Neon Orange) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_161711&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_161711&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(161711, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_161711&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_161715&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Roll Length &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_161715&amp;quot; id=&amp;quot;dom_161715&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(161715, this); formChange(161715);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;161716&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 20 [20m Roll (66 ft)] &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284299&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 33 (100 ft) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284300&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 153 (500 ft) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284301&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 305 (1000 ft) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;284302&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 500 [1640 ft (Size 1/8, 3/16, 1/4)] &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_161715&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_161715&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(161715, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_161715&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr style=&amp;quot;background-color: transparent;&amp;quot;&amp;gt;&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td colspan=&amp;quot;2&amp;quot; align=&amp;quot;left&amp;quot; nowrap&amp;gt;Options in: &amp;lt;ul style=&amp;quot;margin-top:0px; margin-bottom:0px;&amp;quot;&amp;gt; &amp;lt;li&amp;gt;&amp;lt;span style=&amp;quot;color: #777777;&amp;quot;&amp;gt;Gray&amp;lt;/span&amp;gt; are not compatible with other selected option value.&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;span style=&amp;quot;color: #CC0000;&amp;quot;&amp;gt;Red&amp;lt;/span&amp;gt; conflict with another selected option value.&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;span style=&amp;quot;color: #AA9900;&amp;quot;&amp;gt;Amber&amp;lt;/span&amp;gt; are not recommended.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt;
+&amp;lt;/fieldset&amp;gt;
+&amp;lt;/form&amp;gt;</optionSelectHTML><partNumberHTML>&amp;lt;form id=&amp;quot;form&amp;quot; name=&amp;quot;form&amp;quot; action=&amp;quot;&amp;quot;&amp;gt;
+&amp;lt;fieldset&amp;gt;
+&amp;lt;legend class=&amp;quot;med&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;Configuration Options&amp;lt;/strong&amp;gt;&amp;lt;/legend&amp;gt;
+&amp;lt;table width=&amp;quot;100%&amp;quot; border=&amp;quot;0&amp;quot; cellspacing=&amp;quot;0&amp;quot; cellpadding=&amp;quot;2&amp;quot;&amp;gt;
+&amp;lt;tr&amp;gt;&amp;lt;td class=&amp;quot;tiny&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/td&amp;gt;&amp;lt;td align=&amp;quot;right&amp;quot; class=&amp;quot;tiny&amp;quot; id=&amp;quot;cpn_state&amp;quot; style=&amp;quot;font-weight:bold;&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;span id=&amp;quot;cpn_partnumber&amp;quot; class=&amp;quot;large&amp;quot; &amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td rowspan=&amp;quot;1&amp;quot; align=&amp;quot;right&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;images/NA/tilda_32.gif&amp;quot; alt=&amp;quot;&amp;quot; name=&amp;quot;status_img&amp;quot; id=&amp;quot;status_img&amp;quot; width=&amp;quot;32&amp;quot; height=&amp;quot;32&amp;quot; border=&amp;quot;0&amp;quot;&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt;
+&amp;lt;/fieldset&amp;gt;</partNumberHTML><seriesName></seriesName><configuration_doc></configuration_doc><eds_file></eds_file><relatedProducts><relatedProductsCategory><name>Airline Equipment</name><code>AIRLINE_EQUIPMENT</code><id></id><relatedProductsItems><relatedProductsItem><name>AC20-B to AC60-B, Air Filter, Regulator and Lubricator</name><seoslug>AC20-B-to-AC60-B-Air-Filter-Regulator-and-Lubricator</seoslug><imageS>ARL.jpg</imageS><id>128660</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Tubing</name><code>TUBING</code><id></id><relatedProductsItems><relatedProductsItem><name>TIA, Inch Size Nylon Tubing</name><seoslug>TIA-Inch-Size-Nylon-Tubing</seoslug><imageS>3080.jpg</imageS><id>22102</id></relatedProductsItem><relatedProductsItem><name>TU, Polyurethane Tubing, Metric Size</name><seoslug>TU-Polyurethane-Tubing-Metric-Size</seoslug><imageS>tu.jpg</imageS><id>22082</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Valves &amp;amp; Manifolds</name><code>VALVES_MANIFOLDS</code><id></id><relatedProductsItems><relatedProductsItem><name>SY3000, 5 Port Solenoid Valve, All Types - New Style</name><seoslug>SY3000-5-Port-Solenoid-Valve-All-Types-New-Style</seoslug><imageS>1800A.jpg</imageS><id>50600</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Linear Actuators</name><code>LINEAR_ACTUATORS</code><id></id><relatedProductsItems><relatedProductsItem><name>C(D)Q2-Z, Compact Cylinder, Double Acting Single Rod</name><seoslug>C(D)Q2-Z-Compact-Cylinder-Double-Acting-Single-Rod</seoslug><imageS>Compact-Air-Cylinders-Double-Acting-Single-Rod-CDQ2B40-40DZ-and-CQ2B25-30DZ-2031M.jpg</imageS><id>74838</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Tubing PS</name><code>PS_TUBING</code><id></id><relatedProductsItems><relatedProductsItem><name>TIA, Inch Size Nylon Tubing</name><seoslug>TIA-Inch-Size-Nylon-Tubing</seoslug><imageS>3080.jpg</imageS><id>22102</id></relatedProductsItem><relatedProductsItem><name>TU, Polyurethane Tubing, Metric Size</name><seoslug>TU-Polyurethane-Tubing-Metric-Size</seoslug><imageS>tu.jpg</imageS><id>22082</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory></relatedProducts></configurableData></branchCategory>

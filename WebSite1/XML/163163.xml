@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<branchCategory xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><name>CKZN50/63, Power Clamp Cylinder Arm, X6013</name><seoslug>CKZN50-63-Power-Clamp-Cylinder-Arm-X6013~163163</seoslug><imageS>ckz2n_arm.jpg</imageS><imageM>ckz2n_arm.jpg</imageM><imageL>ckz2n_arm.jpg</imageL><iso_symbol>CKZ2NClampArm.gif</iso_symbol><series_catalog>PDF300A.pdf</series_catalog><description>&amp;lt;p&amp;gt;SMC&amp;apos;s CKZ2N/CKZ3N NAAMS standard power clamp cylinder&amp;#xa0;arm.&amp;#xa0;&amp;lt;/p&amp;gt;</description><bullets>&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Naams standard arm for CKZN clamp cylinders&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Bore sizes: 50, 63&amp;#xa0;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Styles: Straight machined or Offset machined&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Available with paint&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;</bullets><preferredproduct>not-used-at-this-time</preferredproduct><breadCrumbs><breadCrumb><name>Actuators</name><seoslug>Actuators</seoslug><id>19461</id></breadCrumb><breadCrumb><name>Clamps</name><seoslug>Clamps</seoslug><id>160327</id></breadCrumb><breadCrumb><name>CKZ2N</name><seoslug>CKZ2N</seoslug><id>160335</id></breadCrumb><breadCrumb><name>CKZN50/63, Power Clamp Cylinder Arm, X6013</name><seoslug>CKZN50-63-Power-Clamp-Cylinder-Arm-X6013</seoslug><id>163161</id></breadCrumb></breadCrumbs><hideFromProduction>0</hideFromProduction><branchItems/><configurableData><jsInitConfig>var locale_code = &amp;apos;en&amp;apos;;
+var catalog_code = &amp;apos;smc&amp;apos;;
+var logcat_code = &amp;apos;SMCUS&amp;apos;;
+var userID = -1;
+var pattern_code = &amp;apos;&amp;apos;;
+var partno_notvalid_text = &amp;apos;The part number needs to be valid in order to view/download.&amp;apos;;
+var rodEndArray = new Array(1);
+var cntArray = 0;
+var base_linecode = &amp;quot;ACT&amp;quot;;
+var series = &amp;quot;CKZ2N&amp;quot;;
+var catalog_dsn = &amp;quot;CC_catalog_smc&amp;quot;;
+var product_id = 163163;
+var hostPages = &amp;quot;/cc_host/pages/&amp;quot;;
+var RodBaseUnits = &amp;quot;INCH&amp;quot;;
+var reqpartno_buttontext = &amp;quot;Request part Number&amp;quot;;
+var ordcustrodends_linktext = &amp;quot;Ordering Custom Rod Ends&amp;quot;;
+var ordcustrodend_msgtext = &amp;quot;The &amp;lt;b&amp;gt;Request Part Number&amp;lt;/b&amp;gt; button is available for registered users when you have completed entering all of the required data fields with valid data. When you press this button your part will be saved in favorites with a special part number. You can used this part number to place an order.&amp;lt;br&amp;gt;&amp;lt;ol compact &amp;gt;&amp;lt;li&amp;gt;SMC will use standard values if no dimension values are entered.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;The same tolerances and finishes used for the standard product will apply. If different tolerances or finish is necessary, please contact SMC; your order may be evaluated for submission as a Request for Special (RFS). &amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;In the case of single acting, spring extend or spring return type cylinders, enter the dimensions when the cylinder is in the retracted position (i.e., the rod is retracted).&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;In the case of double rod type cylinder, you must specify whether the modified rod end modifications apply to both rod ends or only one end.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;When a rod-end modification is specified for a double-rod cylinder, one rod end modification is allowed. This may be applied to one rod end, or both rod ends. If dissimilar modifications are required for each end, please contact SMC; your order may be evaluated for submission as a Request for Special (RFS).&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;quot;;
+var addOptsDomArray = new Array();
+function Init() {
+gConstraintFormID = &amp;apos;form&amp;apos;;
+oStateMessages[&amp;apos;Complete&amp;apos;] = &amp;apos;Part Number is &amp;lt;span style=\&amp;quot;color: #00A000\&amp;quot;&amp;gt;Complete&amp;lt;/span&amp;gt;&amp;apos;;
+oStateMessages[&amp;apos;Partial&amp;apos;] = &amp;apos;Part Number is &amp;lt;span style=\&amp;quot;color: #CCAA00\&amp;quot;&amp;gt;Partial&amp;lt;/span&amp;gt;&amp;apos;;
+oStateMessages[&amp;apos;Invalid&amp;apos;] = &amp;apos;Part Number is &amp;lt;span style=\&amp;quot;color: #AA0000\&amp;quot;&amp;gt;Invalid&amp;lt;/span&amp;gt;&amp;apos;;
+showDomainMessages = smcShowDomainMessages;
+var formEle = document.getElementById(&amp;apos;form&amp;apos;);
+var formOffSetWidth = 0;
+for(i = 0; i &amp;lt; formEle.length; i++) {
+if(formEle.elements[i].type == &amp;quot;select-one&amp;quot;) {
+if(formEle.elements[i].offsetWidth &amp;lt; formOffSetWidth) {
+formEle.elements[i].style.width = &amp;quot;100%&amp;quot;;
+}
+if(formOffSetWidth == 0) {
+formOffSetWidth = formEle.elements[i].offsetWidth;
+}
+}
+if (formEle.elements[i].getAttribute(&amp;apos;selectBoxOptions&amp;apos;)) {
+var idname = formEle.elements[i].id;
+createEditableSelect(formEle.elements[i]);
+formatStandardValues(idname);
+document.onclick = selectBox_hideOptions;
+}
+}
+if (typeof InitConfig != &amp;quot;undefined&amp;quot;) {
+InitConfig();
+}
+oDomains.setNoPick(&amp;quot;&amp;quot;);
+oDomains.setGrammarFilter(&amp;apos;^[\-]&amp;apos;);
+formChange = customFormChange;
+formChange(0);
+if (typeof PostInitConfig != &amp;quot;undefined&amp;quot;) {
+PostInitConfig();
+}
+}
+function InitConfig() {
+}
+function PostInitConfig() {
+if (!hasXOptions) {
+}
+}
+var confirmwin;
+var configName = &amp;quot;&amp;quot;;
+function requestRodEndPartNumber() {
+confirmwin = open(&amp;quot;blank.htm&amp;quot;, &amp;quot;confirmWindow&amp;quot;, &amp;quot;menubar=no,resizable=yes,toolbar=no,titlebar=no,width=660,height=700,scrollbars=yes&amp;quot;);
+var destinSel = document.getElementById(&amp;apos;destination&amp;apos;);
+var oForm = document.forms[&amp;apos;requestrodendform&amp;apos;];
+oForm.xml.value = oDomains.configStateToXML();
+oForm.specList.value = buildSpecList();
+oForm.patternCode.value = &amp;quot;&amp;quot;;
+oForm.favFolderID.value = destinSel.options[destinSel.selectedIndex].value;
+oForm.configState.value = oDomains.getConstraintEngineState();
+oForm.newExtCode.value = currentPartNumber;
+oForm.configName.value = currentPartNumber;
+oForm.action = &amp;quot;/cc_host/pages/public/custom/smc/services/confirmRodendSS.cfm&amp;quot;;
+oForm.target = &amp;quot;confirmWindow&amp;quot;;
+oForm.doaction.value = &amp;apos;request&amp;apos;;
+oForm.formattedStroke.value = formattedStroke;
+oForm.submit();
+setTimeout(&amp;quot;confirmwin.focus();&amp;quot;,200);
+}
+var formattedStroke = &amp;quot;&amp;quot;;
+function buildSpecList() {
+partArray = oDomains.getPartNumber();
+specList = &amp;apos;&amp;apos;;
+spec_codes = &amp;apos;&amp;apos;;
+spec_values = &amp;apos;&amp;apos;;
+partBlock = &amp;apos;&amp;apos;;
+formattedStroke = &amp;quot;&amp;quot;;
+var tempdef = new Array();
+var tempspec_codes = &amp;apos;&amp;apos;;
+var tempspec_values = &amp;apos;&amp;apos;;
+var spec_codesArray = new Array();
+var spec_valuesArray = new Array();
+for (var i=0; i&amp;lt;partArray.length; i++) {
+oDom = oDomains.cpcarray[i];
+if(oDom.dtype != &amp;apos;D_CONSTANT&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;-&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;-X&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;(&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;)&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;,&amp;apos;)
+{
+partBlock = partArray[i];
+if (oDom.hasSelection()) {
+try {
+partBlock = DomInputValProcessor(oDom);
+if (partBlock == &amp;quot;&amp;quot;) {
+partBlock = partArray[i];
+}
+if (oDom.code == &amp;apos;STROKE&amp;apos;) {
+formattedStroke = partBlock;
+}
+} catch (myexcept) {
+}
+}
+if(specList != &amp;apos;&amp;apos;) {
+specList = specList + &amp;apos;,(&amp;quot;&amp;apos; + oDom.did + &amp;apos;&amp;quot;,&amp;quot;&amp;apos; + partBlock + &amp;apos;&amp;quot;)&amp;apos;;
+} else {
+specList = &amp;apos;(&amp;quot;&amp;apos; + oDom.did + &amp;apos;&amp;quot;,&amp;quot;&amp;apos; + partBlock + &amp;apos;&amp;quot;)&amp;apos;;
+}
+if (oDom.hasOwnProperty(&amp;apos;extraAttributes&amp;apos;)) {
+for (var xtraAtt in oDom.extraAttributes) {
+if (oDom.extraAttributes.hasOwnProperty(xtraAtt)) {
+specList = specList + &amp;apos;,(&amp;quot;&amp;apos; + xtraAtt + &amp;apos;&amp;quot;,&amp;quot;&amp;apos; + oDom.extraAttributes[xtraAtt] + &amp;apos;&amp;quot;)&amp;apos;;
+}
+}
+}
+}
+partBlock = partBlock + partArray[i];
+partID = partBlock + partArray[i];
+}
+specList = &amp;apos;(&amp;apos; + specList + &amp;apos;,(Output,2))&amp;apos;;
+return specList;
+}</jsInitConfig><optionSelectHTML>&amp;lt;script language=&amp;quot;JavaScript&amp;quot;&amp;gt;
+var oDomainToRuleMap;
+var aExRules = [];
+var oDomains = new DomainMap();
+var oEMsgStr = new MessageStore();
+var oDom;
+oDomains.addDomain(&amp;apos;CKZ&amp;apos;, &amp;apos;1&amp;apos;, 724935,724936,&amp;apos;D_CONSTANT&amp;apos;,&amp;apos;2013H_1&amp;apos;, &amp;apos;&amp;apos;,null);
+oDom=oDomains.addDomain(&amp;apos;Size&amp;apos;, &amp;apos;2&amp;apos;, 724937,724938,&amp;apos;D_LIST&amp;apos;,&amp;apos;2013H_2&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(724947,&amp;apos;50&amp;apos;,&amp;apos;50&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724948,&amp;apos;63&amp;apos;,&amp;apos;63&amp;apos;,&amp;apos;&amp;apos;);
+oDom=oDomains.addDomain(&amp;apos;Arm Code&amp;apos;, &amp;apos;3&amp;apos;, 724939,724940,&amp;apos;D_LIST&amp;apos;,&amp;apos;2013H_3&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(724951,&amp;apos;A401&amp;apos;,&amp;apos;A401 (50mm Straight Machined, NAAMS Ref No. ACA401M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724952,&amp;apos;A402&amp;apos;,&amp;apos;A402 (50mm Straight Machined, NAAMS Ref No. ACA402M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724953,&amp;apos;A403&amp;apos;,&amp;apos;A403 (50mm Straight Machined, NAAMS Ref No. ACA403M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724954,&amp;apos;A411&amp;apos;,&amp;apos;A411 (50mm Bore 25mm Offset Machined, NAAMS Ref No. ACA411M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724955,&amp;apos;A412&amp;apos;,&amp;apos;A412 (50mm Bore 25mm Offset Machined, NAAMS Ref No. ACA412M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724956,&amp;apos;A413&amp;apos;,&amp;apos;A413 (50mm Bore 25mm Offset Machined, NAAMS Ref No. ACA413M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724957,&amp;apos;A421&amp;apos;,&amp;apos;A421 (50mm Bore 50mm Offset Machined, NAAMS Ref No. ACA421M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724958,&amp;apos;A422&amp;apos;,&amp;apos;A422 (50mm Bore 50mm Offset Machined, NAAMS Ref No. ACA422M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724959,&amp;apos;A423&amp;apos;,&amp;apos;A423 (50mm Bore 50mm Offset Machined, NAAMS Ref No. ACA423M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724960,&amp;apos;A507&amp;apos;,&amp;apos;A507 (63mm Bore Straight Machined, NAAMS Ref No. ACA507M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724961,&amp;apos;A508&amp;apos;,&amp;apos;A508 (63mm Bore Straight Machined, NAAMS Ref No. ACA508M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724962,&amp;apos;A509&amp;apos;,&amp;apos;A509 (63mm Bore Straight Machined, NAAMS Ref No. ACA509M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724963,&amp;apos;A510&amp;apos;,&amp;apos;A510 (63mm Bore Straight Machined, NAAMS Ref No. ACA510M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724964,&amp;apos;A511&amp;apos;,&amp;apos;A511 (63mm Bore Straight Machined, NAAMS Ref No. ACA511M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724965,&amp;apos;A512&amp;apos;,&amp;apos;A512 (63mm Bore Straight Machined, NAAMS Ref No. ACA512M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724966,&amp;apos;A513&amp;apos;,&amp;apos;A513 (63mm Bore Straight Machined, NAAMS Ref No. ACA513M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724967,&amp;apos;A514&amp;apos;,&amp;apos;A514 (63mm Bore Straight Machined, NAAMS Ref No. ACA514M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724968,&amp;apos;A515&amp;apos;,&amp;apos;A515 (63mm Bore Straight Machined, NAAMS Ref No. ACA515M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724969,&amp;apos;A516&amp;apos;,&amp;apos;A516 (63mm Bore Straight Machined, NAAMS Ref No. ACA516M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724970,&amp;apos;A517&amp;apos;,&amp;apos;A517 (63mm Bore Straight Machined, NAAMS Ref No. ACA517M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724971,&amp;apos;A518&amp;apos;,&amp;apos;A518 (63mm Bore Straight Machined, NAAMS Ref No. ACA518M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724972,&amp;apos;A519&amp;apos;,&amp;apos;A519 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA519M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724973,&amp;apos;A520&amp;apos;,&amp;apos;A520 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA520M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724974,&amp;apos;A521&amp;apos;,&amp;apos;A521 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA521M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724975,&amp;apos;A522&amp;apos;,&amp;apos;A522 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA522M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724976,&amp;apos;A523&amp;apos;,&amp;apos;A523 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA523M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724977,&amp;apos;A524&amp;apos;,&amp;apos;A524 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA524M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724978,&amp;apos;A525&amp;apos;,&amp;apos;A525 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA525M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724979,&amp;apos;A526&amp;apos;,&amp;apos;A526 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA526M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724980,&amp;apos;A527&amp;apos;,&amp;apos;A527 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA527M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724981,&amp;apos;A528&amp;apos;,&amp;apos;A528 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA528M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724982,&amp;apos;A529&amp;apos;,&amp;apos;A529 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA529M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724983,&amp;apos;A530&amp;apos;,&amp;apos;A530 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA530M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724984,&amp;apos;A531&amp;apos;,&amp;apos;A531 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA531M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724985,&amp;apos;A532&amp;apos;,&amp;apos;A532 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA532M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724986,&amp;apos;A533&amp;apos;,&amp;apos;A533 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA533M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724987,&amp;apos;A534&amp;apos;,&amp;apos;A534 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA534M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724988,&amp;apos;A535&amp;apos;,&amp;apos;A535 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA535M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724989,&amp;apos;A536&amp;apos;,&amp;apos;A536 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA536M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724990,&amp;apos;A537&amp;apos;,&amp;apos;A537 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA537M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724991,&amp;apos;A538&amp;apos;,&amp;apos;A538 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA538M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724992,&amp;apos;A539&amp;apos;,&amp;apos;A539 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA539M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724993,&amp;apos;A540&amp;apos;,&amp;apos;A540 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA540M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724994,&amp;apos;A541&amp;apos;,&amp;apos;A541 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA541M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724995,&amp;apos;A542&amp;apos;,&amp;apos;A542 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA542M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724996,&amp;apos;A543&amp;apos;,&amp;apos;A543 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA543M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724997,&amp;apos;A544&amp;apos;,&amp;apos;A544 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA544M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724998,&amp;apos;A545&amp;apos;,&amp;apos;A545 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA545M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724999,&amp;apos;A546&amp;apos;,&amp;apos;A546 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA546M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(725000,&amp;apos;A547&amp;apos;,&amp;apos;A547 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA547M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(725001,&amp;apos;A548&amp;apos;,&amp;apos;A548 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA548M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(725002,&amp;apos;A549&amp;apos;,&amp;apos;A549 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA549M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(725003,&amp;apos;A550&amp;apos;,&amp;apos;A550 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA550M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(725004,&amp;apos;A551&amp;apos;,&amp;apos;A551 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA551M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(725005,&amp;apos;A552&amp;apos;,&amp;apos;A552 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA552M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(725006,&amp;apos;A553&amp;apos;,&amp;apos;A553 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA553M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(725007,&amp;apos;A554&amp;apos;,&amp;apos;A554 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA554M)&amp;apos;,&amp;apos;&amp;apos;);
+oDom=oDomains.addDomain(&amp;apos;Arm Style&amp;apos;, &amp;apos;4&amp;apos;, 724941,724942,&amp;apos;D_LIST&amp;apos;,&amp;apos;2013H_4&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(724949,&amp;apos;&amp;apos;,&amp;apos;Standard Arm (not Painted)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(724950,&amp;apos;P&amp;apos;,&amp;apos;P (Painted)&amp;apos;,&amp;apos;&amp;apos;);
+oDomains.addDomain(&amp;apos;-&amp;apos;, &amp;apos;5&amp;apos;, 724943,724944,&amp;apos;D_CONSTANT&amp;apos;,&amp;apos;2013H_5&amp;apos;, &amp;apos;&amp;apos;,null);
+oDomains.addDomain(&amp;apos;X6013&amp;apos;, &amp;apos;6&amp;apos;, 724945,724946,&amp;apos;D_CONSTANT&amp;apos;,&amp;apos;2013H_6&amp;apos;, &amp;apos;&amp;apos;,null);
+aExRules[0] = new Rule(214581,0,2);
+aExRules[0].addMember(724939,1,724951,724952,724953,724954,724955,724956,724957,724958,724959);
+aExRules[0].addMember(724937,1,724948);
+aExRules[1] = new Rule(214582,0,2);
+aExRules[1].addMember(724939,1,724960,724961,724962,724963,724964,724965,724966,724967,724968,724969,724970,724971,724972,724973,724974,724975,724976,724977,724978,724979,724980,724981,724982,724983,724984,724985,724986,724987,724988,724989,724990,724991,724992,724993,724994,724995,724996,724997,724998,724999,725000,725001,725002,725003,725004,725005,725006,725007);
+aExRules[1].addMember(724937,1,724947);
+oDomainToRuleMap = oDomains.createDomainToRuleMap(aExRules);
+&amp;lt;/script&amp;gt;
+&amp;lt;fieldset&amp;gt;&amp;lt;legend class=&amp;quot;med&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;Select Product Options&amp;lt;/strong&amp;gt;&amp;lt;/legend&amp;gt;
+&amp;lt;table id=&amp;quot;configuration_area&amp;quot; class=&amp;quot;small&amp;quot; width=&amp;quot;100%&amp;quot;&amp;gt;
+&amp;lt;tr style=&amp;quot;background-color: transparent;&amp;quot;&amp;gt;&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td colspan=2 align=&amp;quot;left&amp;quot; class=&amp;quot;tiny&amp;quot;&amp;gt;Select values from the drop down lists or make appropriate selections to configure the part number.&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_724937&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Size &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_724937&amp;quot; id=&amp;quot;dom_724937&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(724937, this); formChange(724937);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724947&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 50 &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724948&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; 63 &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_724937&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_724937&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(724937, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_724937&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_724939&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Arm Code &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_724939&amp;quot; id=&amp;quot;dom_724939&amp;quot; class=&amp;quot;small&amp;quot; onchange=&amp;quot;setDomainValue(724939, this); formChange(724939);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724951&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A401 (50mm Straight Machined, NAAMS Ref No. ACA401M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724952&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A402 (50mm Straight Machined, NAAMS Ref No. ACA402M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724953&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A403 (50mm Straight Machined, NAAMS Ref No. ACA403M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724954&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A411 (50mm Bore 25mm Offset Machined, NAAMS Ref No. ACA411M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724955&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A412 (50mm Bore 25mm Offset Machined, NAAMS Ref No. ACA412M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724956&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A413 (50mm Bore 25mm Offset Machined, NAAMS Ref No. ACA413M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724957&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A421 (50mm Bore 50mm Offset Machined, NAAMS Ref No. ACA421M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724958&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A422 (50mm Bore 50mm Offset Machined, NAAMS Ref No. ACA422M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724959&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A423 (50mm Bore 50mm Offset Machined, NAAMS Ref No. ACA423M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724960&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A507 (63mm Bore Straight Machined, NAAMS Ref No. ACA507M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724961&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A508 (63mm Bore Straight Machined, NAAMS Ref No. ACA508M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724962&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A509 (63mm Bore Straight Machined, NAAMS Ref No. ACA509M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724963&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A510 (63mm Bore Straight Machined, NAAMS Ref No. ACA510M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724964&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A511 (63mm Bore Straight Machined, NAAMS Ref No. ACA511M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724965&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A512 (63mm Bore Straight Machined, NAAMS Ref No. ACA512M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724966&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A513 (63mm Bore Straight Machined, NAAMS Ref No. ACA513M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724967&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A514 (63mm Bore Straight Machined, NAAMS Ref No. ACA514M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724968&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A515 (63mm Bore Straight Machined, NAAMS Ref No. ACA515M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724969&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A516 (63mm Bore Straight Machined, NAAMS Ref No. ACA516M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724970&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A517 (63mm Bore Straight Machined, NAAMS Ref No. ACA517M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724971&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A518 (63mm Bore Straight Machined, NAAMS Ref No. ACA518M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724972&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A519 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA519M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724973&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A520 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA520M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724974&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A521 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA521M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724975&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A522 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA522M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724976&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A523 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA523M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724977&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A524 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA524M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724978&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A525 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA525M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724979&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A526 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA526M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724980&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A527 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA527M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724981&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A528 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA528M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724982&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A529 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA529M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724983&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A530 (63mm Bore 25mm Offset Machined, NAAMS Ref No. ACA530M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724984&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A531 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA531M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724985&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A532 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA532M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724986&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A533 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA533M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724987&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A534 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA534M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724988&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A535 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA535M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724989&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A536 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA536M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724990&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A537 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA537M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724991&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A538 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA538M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724992&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A539 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA539M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724993&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A540 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA540M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724994&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A541 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA541M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724995&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A542 (63mm Bore 70mm Offset Machined, NAAMS Ref No. ACA542M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724996&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A543 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA543M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724997&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A544 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA544M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724998&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A545 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA545M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724999&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A546 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA546M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;725000&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A547 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA547M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;725001&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A548 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA548M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;725002&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A549 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA549M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;725003&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A550 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA550M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;725004&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A551 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA551M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;725005&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A552 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA552M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;725006&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A553 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA553M) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;725007&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; A554 (63mm Bore 120mm Offset Machined, NAAMS Ref No. ACA554M) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_724939&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_724939&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(724939, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_724939&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_724941&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Arm Style &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_724941&amp;quot; id=&amp;quot;dom_724941&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(724941, this); formChange(724941);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724949&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Standard Arm (not Painted) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;724950&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; P (Painted) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_724941&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_724941&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(724941, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_724941&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr style=&amp;quot;background-color: transparent;&amp;quot;&amp;gt;&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td colspan=&amp;quot;2&amp;quot; align=&amp;quot;left&amp;quot; nowrap&amp;gt;Options in: &amp;lt;ul style=&amp;quot;margin-top:0px; margin-bottom:0px;&amp;quot;&amp;gt; &amp;lt;li&amp;gt;&amp;lt;span style=&amp;quot;color: #777777;&amp;quot;&amp;gt;Gray&amp;lt;/span&amp;gt; are not compatible with other selected option value.&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;span style=&amp;quot;color: #CC0000;&amp;quot;&amp;gt;Red&amp;lt;/span&amp;gt; conflict with another selected option value.&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;span style=&amp;quot;color: #AA9900;&amp;quot;&amp;gt;Amber&amp;lt;/span&amp;gt; are not recommended.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt;
+&amp;lt;/fieldset&amp;gt;
+&amp;lt;/form&amp;gt;</optionSelectHTML><partNumberHTML>&amp;lt;form id=&amp;quot;form&amp;quot; name=&amp;quot;form&amp;quot; action=&amp;quot;&amp;quot;&amp;gt;
+&amp;lt;fieldset&amp;gt;
+&amp;lt;legend class=&amp;quot;med&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;Configuration Options&amp;lt;/strong&amp;gt;&amp;lt;/legend&amp;gt;
+&amp;lt;table width=&amp;quot;100%&amp;quot; border=&amp;quot;0&amp;quot; cellspacing=&amp;quot;0&amp;quot; cellpadding=&amp;quot;2&amp;quot;&amp;gt;
+&amp;lt;tr&amp;gt;&amp;lt;td class=&amp;quot;tiny&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/td&amp;gt;&amp;lt;td align=&amp;quot;right&amp;quot; class=&amp;quot;tiny&amp;quot; id=&amp;quot;cpn_state&amp;quot; style=&amp;quot;font-weight:bold;&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;span id=&amp;quot;cpn_partnumber&amp;quot; class=&amp;quot;large&amp;quot; &amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td rowspan=&amp;quot;1&amp;quot; align=&amp;quot;right&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;images/NA/tilda_32.gif&amp;quot; alt=&amp;quot;&amp;quot; name=&amp;quot;status_img&amp;quot; id=&amp;quot;status_img&amp;quot; width=&amp;quot;32&amp;quot; height=&amp;quot;32&amp;quot; border=&amp;quot;0&amp;quot;&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt;
+&amp;lt;/fieldset&amp;gt;</partNumberHTML><seriesName></seriesName><configuration_doc></configuration_doc><eds_file></eds_file><relatedProducts><relatedProductsCategory><name>Airline Equipment</name><code>AIRLINE_EQUIPMENT</code><id></id><relatedProductsItems><relatedProductsItem><name>AC20-B to AC60-B, Air Filter, Regulator and Lubricator</name><seoslug>AC20-B-to-AC60-B-Air-Filter-Regulator-and-Lubricator</seoslug><imageS>ARL.jpg</imageS><id>128660</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Tubing</name><code>TUBING</code><id></id><relatedProductsItems><relatedProductsItem><name>TIA, Inch Size Nylon Tubing</name><seoslug>TIA-Inch-Size-Nylon-Tubing</seoslug><imageS>3080.jpg</imageS><id>22102</id></relatedProductsItem><relatedProductsItem><name>TU, Polyurethane Tubing, Metric Size</name><seoslug>TU-Polyurethane-Tubing-Metric-Size</seoslug><imageS>tu.jpg</imageS><id>22082</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Fittings</name><code>FITTINGS</code><id></id><relatedProductsItems><relatedProductsItem><name>KQ2, One-touch Fitting for Inch Size Tube, UNF, NPT Connection Thread</name><seoslug>KQ2-One-touch-Fitting-for-Inch-Size-Tube-UNF-NPT-Connection-Thread</seoslug><imageS>3001_US.jpg</imageS><id>87071</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Valves &amp;amp; Manifolds</name><code>VALVES_MANIFOLDS</code><id></id><relatedProductsItems><relatedProductsItem><name>SY3000, 5 Port Solenoid Valve, All Types - New Style</name><seoslug>SY3000-5-Port-Solenoid-Valve-All-Types-New-Style</seoslug><imageS>1800A.jpg</imageS><id>50600</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Cylinder Parts &amp;amp; Accessories</name><code>CYLINDER_PARTS_ACCESSORIES</code><id></id><relatedProductsItems><relatedProductsItem><name>Auto Switch, Solid State, General Purpose</name><seoslug>Auto-Switch-Solid-State-General-Purpose</seoslug><imageS>8545Ab.jpg</imageS><id>30777</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Tubing PS</name><code>PS_TUBING</code><id></id><relatedProductsItems><relatedProductsItem><name>TIA, Inch Size Nylon Tubing</name><seoslug>TIA-Inch-Size-Nylon-Tubing</seoslug><imageS>3080.jpg</imageS><id>22102</id></relatedProductsItem><relatedProductsItem><name>TU, Polyurethane Tubing, Metric Size</name><seoslug>TU-Polyurethane-Tubing-Metric-Size</seoslug><imageS>tu.jpg</imageS><id>22082</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory></relatedProducts></configurableData></branchCategory>

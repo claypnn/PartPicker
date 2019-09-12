@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<branchCategory xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><name>KB, Piping Module</name><seoslug>KB-Piping-Module~21848</seoslug><imageS>3085.jpg</imageS><imageM>3085.jpg</imageM><imageL>3085.jpg</imageL><iso_symbol>fittingmfld.gif</iso_symbol><series_catalog>KB.pdf</series_catalog><description>&amp;lt;p&amp;gt;
+Piping module series KB has made distribution easy utilizing one-touch fittings. A locking system makes the use of tools unnecessary for installation of one- touch fittings and makes piping more efficient. Universal construction allows for changes in air output direction after connections are completed.
+&amp;lt;/p&amp;gt;</description><bullets>&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Piping module series&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Material: nylon, soft nylon, polyurethane&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Tube O.D: &amp;amp;oslash;4, &amp;amp;oslash;6, &amp;amp;oslash;8, &amp;amp;oslash;10, &amp;amp;oslash;12, &amp;amp;oslash;16&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Male thread: 1/8, 1/4, 3/8, 1/2&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Female thread: M5x0.8, M6x1, 1/8, 1/4, 3/8, 1/2&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;</bullets><preferredproduct>not-used-at-this-time</preferredproduct><breadCrumbs><breadCrumb><name>Connectors</name><seoslug>Connectors</seoslug><id>21836</id></breadCrumb><breadCrumb><name>Manifolds</name><seoslug>Manifolds</seoslug><id>21837</id></breadCrumb><breadCrumb><name>KB</name><seoslug>KB</seoslug><id>21845</id></breadCrumb><breadCrumb><name>KB, Piping</name><seoslug>KB-Piping</seoslug><id>12397</id></breadCrumb></breadCrumbs><hideFromProduction>0</hideFromProduction><branchItems/><configurableData><jsInitConfig>var locale_code = &amp;apos;en&amp;apos;;
+var catalog_code = &amp;apos;smc&amp;apos;;
+var logcat_code = &amp;apos;SMCUS&amp;apos;;
+var userID = -1;
+var pattern_code = &amp;apos;kb3085&amp;apos;;
+var partno_notvalid_text = &amp;apos;The part number needs to be valid in order to view/download.&amp;apos;;
+var rodEndArray = new Array(1);
+var cntArray = 0;
+var base_linecode = &amp;quot;CNN&amp;quot;;
+var series = &amp;quot;KB&amp;quot;;
+var catalog_dsn = &amp;quot;CC_catalog_smc&amp;quot;;
+var product_id = 21848;
+var hostPages = &amp;quot;/cc_host/pages/&amp;quot;;
+var RodBaseUnits = &amp;quot;INCH&amp;quot;;
+var reqpartno_buttontext = &amp;quot;Request part Number&amp;quot;;
+var ordcustrodends_linktext = &amp;quot;Ordering Custom Rod Ends&amp;quot;;
+var ordcustrodend_msgtext = &amp;quot;The &amp;lt;b&amp;gt;Request Part Number&amp;lt;/b&amp;gt; button is available for registered users when you have completed entering all of the required data fields with valid data. When you press this button your part will be saved in favorites with a special part number. You can used this part number to place an order.&amp;lt;br&amp;gt;&amp;lt;ol compact &amp;gt;&amp;lt;li&amp;gt;SMC will use standard values if no dimension values are entered.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;The same tolerances and finishes used for the standard product will apply. If different tolerances or finish is necessary, please contact SMC; your order may be evaluated for submission as a Request for Special (RFS). &amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;In the case of single acting, spring extend or spring return type cylinders, enter the dimensions when the cylinder is in the retracted position (i.e., the rod is retracted).&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;In the case of double rod type cylinder, you must specify whether the modified rod end modifications apply to both rod ends or only one end.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;When a rod-end modification is specified for a double-rod cylinder, one rod end modification is allowed. This may be applied to one rod end, or both rod ends. If dissimilar modifications are required for each end, please contact SMC; your order may be evaluated for submission as a Request for Special (RFS).&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;quot;;
+var addOptsDomArray = new Array();
+function Init() {
+gConstraintFormID = &amp;apos;form&amp;apos;;
+oStateMessages[&amp;apos;Complete&amp;apos;] = &amp;apos;Part Number is &amp;lt;span style=\&amp;quot;color: #00A000\&amp;quot;&amp;gt;Complete&amp;lt;/span&amp;gt;&amp;apos;;
+oStateMessages[&amp;apos;Partial&amp;apos;] = &amp;apos;Part Number is &amp;lt;span style=\&amp;quot;color: #CCAA00\&amp;quot;&amp;gt;Partial&amp;lt;/span&amp;gt;&amp;apos;;
+oStateMessages[&amp;apos;Invalid&amp;apos;] = &amp;apos;Part Number is &amp;lt;span style=\&amp;quot;color: #AA0000\&amp;quot;&amp;gt;Invalid&amp;lt;/span&amp;gt;&amp;apos;;
+showDomainMessages = smcShowDomainMessages;
+var formEle = document.getElementById(&amp;apos;form&amp;apos;);
+var formOffSetWidth = 0;
+for(i = 0; i &amp;lt; formEle.length; i++) {
+if(formEle.elements[i].type == &amp;quot;select-one&amp;quot;) {
+if(formEle.elements[i].offsetWidth &amp;lt; formOffSetWidth) {
+formEle.elements[i].style.width = &amp;quot;100%&amp;quot;;
+}
+if(formOffSetWidth == 0) {
+formOffSetWidth = formEle.elements[i].offsetWidth;
+}
+}
+if (formEle.elements[i].getAttribute(&amp;apos;selectBoxOptions&amp;apos;)) {
+var idname = formEle.elements[i].id;
+createEditableSelect(formEle.elements[i]);
+formatStandardValues(idname);
+document.onclick = selectBox_hideOptions;
+}
+}
+if (typeof InitConfig != &amp;quot;undefined&amp;quot;) {
+InitConfig();
+}
+oDomains.setNoPick(&amp;quot;&amp;quot;);
+oDomains.setGrammarFilter(&amp;apos;^[\-]&amp;apos;);
+formChange = customFormChange;
+formChange(0);
+if (typeof PostInitConfig != &amp;quot;undefined&amp;quot;) {
+PostInitConfig();
+}
+}
+function InitConfig() {
+}
+function PostInitConfig() {
+if (!hasXOptions) {
+}
+}
+var confirmwin;
+var configName = &amp;quot;&amp;quot;;
+function requestRodEndPartNumber() {
+confirmwin = open(&amp;quot;blank.htm&amp;quot;, &amp;quot;confirmWindow&amp;quot;, &amp;quot;menubar=no,resizable=yes,toolbar=no,titlebar=no,width=660,height=700,scrollbars=yes&amp;quot;);
+var destinSel = document.getElementById(&amp;apos;destination&amp;apos;);
+var oForm = document.forms[&amp;apos;requestrodendform&amp;apos;];
+oForm.xml.value = oDomains.configStateToXML();
+oForm.specList.value = buildSpecList();
+oForm.patternCode.value = &amp;quot;kb3085&amp;quot;;
+oForm.favFolderID.value = destinSel.options[destinSel.selectedIndex].value;
+oForm.configState.value = oDomains.getConstraintEngineState();
+oForm.newExtCode.value = currentPartNumber;
+oForm.configName.value = currentPartNumber;
+oForm.action = &amp;quot;/cc_host/pages/public/custom/smc/services/confirmRodendSS.cfm&amp;quot;;
+oForm.target = &amp;quot;confirmWindow&amp;quot;;
+oForm.doaction.value = &amp;apos;request&amp;apos;;
+oForm.formattedStroke.value = formattedStroke;
+oForm.submit();
+setTimeout(&amp;quot;confirmwin.focus();&amp;quot;,200);
+}
+var formattedStroke = &amp;quot;&amp;quot;;
+function buildSpecList() {
+partArray = oDomains.getPartNumber();
+specList = &amp;apos;&amp;apos;;
+spec_codes = &amp;apos;&amp;apos;;
+spec_values = &amp;apos;&amp;apos;;
+partBlock = &amp;apos;&amp;apos;;
+formattedStroke = &amp;quot;&amp;quot;;
+var tempdef = new Array();
+var tempspec_codes = &amp;apos;&amp;apos;;
+var tempspec_values = &amp;apos;&amp;apos;;
+var spec_codesArray = new Array();
+var spec_valuesArray = new Array();
+for (var i=0; i&amp;lt;partArray.length; i++) {
+oDom = oDomains.cpcarray[i];
+if(oDom.dtype != &amp;apos;D_CONSTANT&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;-&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;-X&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;(&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;)&amp;apos; &amp;amp;&amp;amp; oDom.label != &amp;apos;,&amp;apos;)
+{
+partBlock = partArray[i];
+if (oDom.hasSelection()) {
+try {
+partBlock = DomInputValProcessor(oDom);
+if (partBlock == &amp;quot;&amp;quot;) {
+partBlock = partArray[i];
+}
+if (oDom.code == &amp;apos;STROKE&amp;apos;) {
+formattedStroke = partBlock;
+}
+} catch (myexcept) {
+}
+}
+if(specList != &amp;apos;&amp;apos;) {
+specList = specList + &amp;apos;,(&amp;quot;&amp;apos; + oDom.did + &amp;apos;&amp;quot;,&amp;quot;&amp;apos; + partBlock + &amp;apos;&amp;quot;)&amp;apos;;
+} else {
+specList = &amp;apos;(&amp;quot;&amp;apos; + oDom.did + &amp;apos;&amp;quot;,&amp;quot;&amp;apos; + partBlock + &amp;apos;&amp;quot;)&amp;apos;;
+}
+if (oDom.hasOwnProperty(&amp;apos;extraAttributes&amp;apos;)) {
+for (var xtraAtt in oDom.extraAttributes) {
+if (oDom.extraAttributes.hasOwnProperty(xtraAtt)) {
+specList = specList + &amp;apos;,(&amp;quot;&amp;apos; + xtraAtt + &amp;apos;&amp;quot;,&amp;quot;&amp;apos; + oDom.extraAttributes[xtraAtt] + &amp;apos;&amp;quot;)&amp;apos;;
+}
+}
+}
+}
+partBlock = partBlock + partArray[i];
+partID = partBlock + partArray[i];
+}
+specList = &amp;apos;(&amp;apos; + specList + &amp;apos;,(Output,2))&amp;apos;;
+return specList;
+}</jsInitConfig><optionSelectHTML>&amp;lt;script language=&amp;quot;JavaScript&amp;quot;&amp;gt;
+var oDomainToRuleMap;
+var aExRules = [];
+var oDomains = new DomainMap();
+var oEMsgStr = new MessageStore();
+var oDom;
+oDomains.addDomain(&amp;apos;KB&amp;apos;, &amp;apos;0&amp;apos;, 159972,159971,&amp;apos;D_CONSTANT&amp;apos;,&amp;apos;KB&amp;apos;, &amp;apos;&amp;apos;,null);
+oDom=oDomains.addDomain(&amp;apos;Model&amp;apos;, &amp;apos;1&amp;apos;, 159934,159933,&amp;apos;D_LIST&amp;apos;,&amp;apos;3085_1&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(159935,&amp;apos;B&amp;apos;,&amp;apos;B (Male Connector Socket)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159936,&amp;apos;D&amp;apos;,&amp;apos;D (Elbow, Different Dia. Female Connector Module)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159937,&amp;apos;E&amp;apos;,&amp;apos;E (Bulkhead Connector)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159938,&amp;apos;H&amp;apos;,&amp;apos;H (Female Connector Union)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159939,&amp;apos;L&amp;apos;,&amp;apos;L (Female Connector Elbow Union)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159940,&amp;apos;R&amp;apos;,&amp;apos;R (Different Dia. Module)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159941,&amp;apos;S&amp;apos;,&amp;apos;S (Female Connector Socket)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159942,&amp;apos;V&amp;apos;,&amp;apos;V (Elbow Socket Module)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159943,&amp;apos;Z&amp;apos;,&amp;apos;Z (Branch Elbow Module)&amp;apos;,&amp;apos;&amp;apos;);
+oDom=oDomains.addDomain(&amp;apos;Body Size&amp;apos;, &amp;apos;2&amp;apos;, 159945,159944,&amp;apos;D_LIST&amp;apos;,&amp;apos;3085_2&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(159946,&amp;apos;1&amp;apos;,&amp;apos;Body Size 1&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159947,&amp;apos;2&amp;apos;,&amp;apos;Body Size 2&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159948,&amp;apos;3&amp;apos;,&amp;apos;Body Size 3&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159949,&amp;apos;4&amp;apos;,&amp;apos;Body Size 4&amp;apos;,&amp;apos;&amp;apos;);
+oDomains.addDomain(&amp;apos;-&amp;apos;, &amp;apos;3&amp;apos;, 159974,159973,&amp;apos;D_CONSTANT&amp;apos;,&amp;apos;308514364-&amp;apos;, &amp;apos;&amp;apos;,null);
+oDom=oDomains.addDomain(&amp;apos;Port Size Applicable Tube&amp;apos;, &amp;apos;4&amp;apos;, 159951,159950,&amp;apos;D_LIST&amp;apos;,&amp;apos;3085_4&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(159952,&amp;apos;1&amp;apos;,&amp;apos;Body Size 1&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159953,&amp;apos;2&amp;apos;,&amp;apos;Body Size 2&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159954,&amp;apos;3&amp;apos;,&amp;apos;Body Size 3&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159955,&amp;apos;04&amp;apos;,&amp;apos;&amp;#xd8;4&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159956,&amp;apos;06&amp;apos;,&amp;apos;&amp;#xd8;6&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159957,&amp;apos;08&amp;apos;,&amp;apos;&amp;#xd8;8&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159958,&amp;apos;10&amp;apos;,&amp;apos;&amp;#xd8;10&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159959,&amp;apos;12&amp;apos;,&amp;apos;&amp;#xd8;12&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159960,&amp;apos;16&amp;apos;,&amp;apos;&amp;#xd8;16&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159961,&amp;apos;M5&amp;apos;,&amp;apos;M5X0.8&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159962,&amp;apos;M6&amp;apos;,&amp;apos;M6X1.0&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159963,&amp;apos;R1&amp;apos;,&amp;apos;R1 [R(PT) 1/8, Rc(PT) 1/8]&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159964,&amp;apos;R2&amp;apos;,&amp;apos;R2 (R(PT) 1/4, Rc(PT) 1/4)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159965,&amp;apos;R3&amp;apos;,&amp;apos;R3 (R(PT) 3/8, Rc(PT) 3/8)&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(159966,&amp;apos;R4&amp;apos;,&amp;apos;R4 (R(PT) 1/2, Rc(PT) 1/2)&amp;apos;,&amp;apos;&amp;apos;);
+oDom=oDomains.addDomain(&amp;apos;Sealant&amp;apos;, &amp;apos;5_1&amp;apos;, 248627,248626,&amp;apos;D_LIST&amp;apos;,&amp;apos;3002@_5_4&amp;apos;,&amp;apos;&amp;apos;, &amp;apos;OPTION&amp;apos;, &amp;apos;&amp;apos;);
+oDom.addMember(248628,&amp;apos;&amp;apos;,&amp;apos;w/o Sealant&amp;apos;,&amp;apos;&amp;apos;);
+oDom.addMember(248629,&amp;apos;S&amp;apos;,&amp;apos;S (Sealant)&amp;apos;,&amp;apos;&amp;apos;);
+aExRules[0] = new Rule(115761,10693,2);
+aExRules[0].addMember(159945,1,159946);
+aExRules[0].addMember(159934,1,159935);
+aExRules[0].addMember(159951,1,159962,159963,159964);
+aExRules[1] = new Rule(115762,10694,2);
+aExRules[1].addMember(159945,1,159947);
+aExRules[1].addMember(159934,1,159935);
+aExRules[1].addMember(159951,1,159961,159963,159964);
+aExRules[2] = new Rule(115763,10695,2);
+aExRules[2].addMember(159945,1,159948);
+aExRules[2].addMember(159934,1,159935);
+aExRules[2].addMember(159951,1,159961,159962,159964);
+aExRules[3] = new Rule(115764,10696,2);
+aExRules[3].addMember(159945,1,159949);
+aExRules[3].addMember(159934,1,159935);
+aExRules[3].addMember(159951,1,159961,159962,159963);
+aExRules[4] = new Rule(115765,10697,2);
+aExRules[4].addMember(159945,1,159947);
+aExRules[4].addMember(159934,1,159936,159940);
+aExRules[4].addMember(159951,1,159953,159954);
+aExRules[5] = new Rule(115766,10698,2);
+aExRules[5].addMember(159945,1,159948);
+aExRules[5].addMember(159934,1,159936,159940);
+aExRules[5].addMember(159951,1,159952,159954);
+aExRules[6] = new Rule(115767,10699,2);
+aExRules[6].addMember(159945,1,159949);
+aExRules[6].addMember(159934,1,159936,159940);
+aExRules[6].addMember(159951,1,159952,159953);
+aExRules[7] = new Rule(115768,10700,2);
+aExRules[7].addMember(159945,1,159946);
+aExRules[7].addMember(159934,1,159937,159943);
+aExRules[7].addMember(159951,1,159957,159958,159959);
+aExRules[8] = new Rule(115769,10701,2);
+aExRules[8].addMember(159945,1,159947);
+aExRules[8].addMember(159934,1,159937);
+aExRules[8].addMember(159951,1,159955,159959);
+aExRules[9] = new Rule(115770,10702,2);
+aExRules[9].addMember(159945,1,159948);
+aExRules[9].addMember(159934,1,159937);
+aExRules[9].addMember(159951,1,159955,159956);
+aExRules[10] = new Rule(115771,10703,2);
+aExRules[10].addMember(159945,1,159949);
+aExRules[10].addMember(159934,1,159937,159943);
+aExRules[10].addMember(159951,1,159955,159956,159957,159958);
+aExRules[11] = new Rule(115772,10704,2);
+aExRules[11].addMember(159945,1,159946);
+aExRules[11].addMember(159934,1,159938,159939,159941);
+aExRules[11].addMember(159951,1,159964,159965,159966);
+aExRules[12] = new Rule(115773,10705,2);
+aExRules[12].addMember(159945,1,159947);
+aExRules[12].addMember(159934,1,159938,159939,159941);
+aExRules[12].addMember(159951,1,159966);
+aExRules[13] = new Rule(115774,10706,2);
+aExRules[13].addMember(159945,1,159948,159949);
+aExRules[13].addMember(159934,1,159938,159939);
+aExRules[13].addMember(159951,1,159963);
+aExRules[14] = new Rule(115775,10707,2);
+aExRules[14].addMember(159945,1,159949);
+aExRules[14].addMember(159934,1,159938,159939,159941);
+aExRules[14].addMember(159951,1,159964);
+aExRules[15] = new Rule(115776,10708,2);
+aExRules[15].addMember(159945,1,159947,159949);
+aExRules[15].addMember(159934,1,159941);
+aExRules[15].addMember(159951,1,159963,159965);
+aExRules[16] = new Rule(115777,10709,2);
+aExRules[16].addMember(159945,1,159948);
+aExRules[16].addMember(159934,1,159941);
+aExRules[16].addMember(159951,1,159963,159964,159966);
+aExRules[17] = new Rule(115778,10710,2);
+aExRules[17].addMember(159945,1,159946);
+aExRules[17].addMember(159934,1,159942);
+aExRules[17].addMember(159951,1,159957,159958,159959,159960,159963,159964,159965);
+aExRules[18] = new Rule(115779,10711,2);
+aExRules[18].addMember(159945,1,159947);
+aExRules[18].addMember(159934,1,159942);
+aExRules[18].addMember(159951,1,159955,159958,159959,159960,159964,159965);
+aExRules[19] = new Rule(115780,10712,2);
+aExRules[19].addMember(159945,1,159948);
+aExRules[19].addMember(159934,1,159942);
+aExRules[19].addMember(159951,1,159955,159956,159960,159961,159962,159965);
+aExRules[20] = new Rule(115781,10713,2);
+aExRules[20].addMember(159945,1,159949);
+aExRules[20].addMember(159934,1,159942);
+aExRules[20].addMember(159951,1,159955,159956,159957,159958,159961,159962,159963);
+aExRules[21] = new Rule(115782,10714,2);
+aExRules[21].addMember(159945,1,159947);
+aExRules[21].addMember(159934,1,159943);
+aExRules[21].addMember(159951,1,159955,159956,159958,159959);
+aExRules[22] = new Rule(115783,10715,2);
+aExRules[22].addMember(159945,1,159948);
+aExRules[22].addMember(159934,1,159943);
+aExRules[22].addMember(159951,1,159955,159956,159957);
+aExRules[23] = new Rule(115784,10692,2);
+aExRules[23].addMember(159945,1,159946);
+aExRules[23].addMember(159934,1,159936,159940);
+aExRules[24] = new Rule(115785,1429,2);
+aExRules[24].addMember(248627,1,248628);
+aExRules[24].addMember(159934,1,159938,159939);
+aExRules[25] = new Rule(115786,10716,2);
+aExRules[25].addMember(159934,1,159935);
+aExRules[25].addMember(159951,1,159952,159953,159954,159955,159956,159957,159958,159959,159960,159965,159966);
+aExRules[26] = new Rule(115787,10717,2);
+aExRules[26].addMember(159934,1,159936,159940);
+aExRules[26].addMember(159951,1,159955,159956,159957,159958,159959,159960,159961,159962,159963,159964,159965,159966);
+aExRules[27] = new Rule(115788,10718,2);
+aExRules[27].addMember(159934,1,159937,159943);
+aExRules[27].addMember(159951,1,159952,159953,159954,159960,159961,159962,159963,159964,159965,159966);
+aExRules[28] = new Rule(115789,10719,2);
+aExRules[28].addMember(159934,1,159938,159939,159941);
+aExRules[28].addMember(159951,1,159952,159953,159954,159955,159956,159957,159958,159959,159960,159961,159962);
+aExRules[29] = new Rule(115790,10720,2);
+aExRules[29].addMember(159934,1,159942);
+aExRules[29].addMember(159951,1,159952,159953,159954,159966);
+aExRules[30] = new Rule(115791,10721,2);
+aExRules[30].addMember(248627,1,248629);
+aExRules[30].addMember(159934,1,159935,159936,159937,159940,159941,159942,159943);
+oEMsgStr.addMessage(1429,&amp;apos;Sealant required with model selected&amp;apos;);
+oEMsgStr.addMessage(10692,&amp;apos;Body size \&amp;quot;1\&amp;quot; not available on model selected&amp;apos;);
+oEMsgStr.addMessage(10693,&amp;apos;Selected port size not available with body size \&amp;quot;1\&amp;quot; on model \&amp;quot;B\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(10694,&amp;apos;Selected port size not available with body size \&amp;quot;2\&amp;quot; on model \&amp;quot;B\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(10695,&amp;apos;Selected port size not available with body size \&amp;quot;3\&amp;quot; on model \&amp;quot;B\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(10696,&amp;apos;Selected port size not available with body size \&amp;quot;4\&amp;quot; on model \&amp;quot;B\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(10697,&amp;apos;Body size \&amp;quot;2\&amp;quot; not available with port size &amp;amp; model selected&amp;apos;);
+oEMsgStr.addMessage(10698,&amp;apos;Body size \&amp;quot;3\&amp;quot; not available with port size &amp;amp; model selected&amp;apos;);
+oEMsgStr.addMessage(10699,&amp;apos;Body size \&amp;quot;4\&amp;quot; not available with port size &amp;amp; model selected&amp;apos;);
+oEMsgStr.addMessage(10700,&amp;apos;Body size \&amp;quot;1\&amp;quot; not available with port size &amp;amp; model selected&amp;apos;);
+oEMsgStr.addMessage(10701,&amp;apos;Body size \&amp;quot;2\&amp;quot; not available with port size &amp;amp; model selected&amp;apos;);
+oEMsgStr.addMessage(10702,&amp;apos;Body size \&amp;quot;3\&amp;quot; not available with port size &amp;amp; model selected&amp;apos;);
+oEMsgStr.addMessage(10703,&amp;apos;Body size \&amp;quot;4\&amp;quot; not available with port size &amp;amp; model selected&amp;apos;);
+oEMsgStr.addMessage(10704,&amp;apos;Body size \&amp;quot;1\&amp;quot; not available with port size &amp;amp; model selected&amp;apos;);
+oEMsgStr.addMessage(10705,&amp;apos;Body size \&amp;quot;2\&amp;quot; not available with port size &amp;amp; model selected&amp;apos;);
+oEMsgStr.addMessage(10706,&amp;apos;Port size \&amp;quot;R1\&amp;quot; not available with body size &amp;amp; model selected&amp;apos;);
+oEMsgStr.addMessage(10707,&amp;apos;Port size \&amp;quot;R2\&amp;quot; not available with body size \&amp;quot;4\&amp;quot; on selected model&amp;apos;);
+oEMsgStr.addMessage(10708,&amp;apos;Port size &amp;amp; body size selected not available on model \&amp;quot;S\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(10709,&amp;apos;Port size selected not available with body size \&amp;quot;3\&amp;quot; on model \&amp;quot;S\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(10710,&amp;apos;Selected port size not available with body size \&amp;quot;1\&amp;quot; on model \&amp;quot;V\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(10711,&amp;apos;Port size selected not available with body size \&amp;quot;2\&amp;quot; on model \&amp;quot;V\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(10712,&amp;apos;Selected port size not available with body size \&amp;quot;3\&amp;quot; on model \&amp;quot;V\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(10713,&amp;apos;Selected port size not available with body size \&amp;quot;4\&amp;quot; on model \&amp;quot;V\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(10714,&amp;apos;Selected port size not available with body size \&amp;quot;2\&amp;quot; on model \&amp;quot;Z\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(10715,&amp;apos;Selected port size not available with body size \&amp;quot;3\&amp;quot; on model \&amp;quot;Z\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(10716,&amp;apos;Selected port size not available on model \&amp;quot;B\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(10717,&amp;apos;Selected port size not available with model \&amp;quot;D\&amp;quot; or \&amp;quot;R\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(10718,&amp;apos;Selected port size not available on model \&amp;quot;E\&amp;quot; or \&amp;quot;Z\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(10719,&amp;apos;Selected port size not available on model selected&amp;apos;);
+oEMsgStr.addMessage(10720,&amp;apos;Selected port size not available on model \&amp;quot;V\&amp;quot;&amp;apos;);
+oEMsgStr.addMessage(10721,&amp;apos;Sealant not available with model selected&amp;apos;);
+oDomainToRuleMap = oDomains.createDomainToRuleMap(aExRules);
+&amp;lt;/script&amp;gt;
+&amp;lt;fieldset&amp;gt;&amp;lt;legend class=&amp;quot;med&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;Select Product Options&amp;lt;/strong&amp;gt;&amp;lt;/legend&amp;gt;
+&amp;lt;table id=&amp;quot;configuration_area&amp;quot; class=&amp;quot;small&amp;quot; width=&amp;quot;100%&amp;quot;&amp;gt;
+&amp;lt;tr style=&amp;quot;background-color: transparent;&amp;quot;&amp;gt;&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td colspan=2 align=&amp;quot;left&amp;quot; class=&amp;quot;tiny&amp;quot;&amp;gt;Select values from the drop down lists or make appropriate selections to configure the part number.&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_159934&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Model &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_159934&amp;quot; id=&amp;quot;dom_159934&amp;quot; class=&amp;quot;small&amp;quot; onchange=&amp;quot;setDomainValue(159934, this); formChange(159934);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159935&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; B (Male Connector Socket) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159936&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; D (Elbow, Different Dia. Female Connector Module) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159937&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; E (Bulkhead Connector) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159938&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; H (Female Connector Union) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159939&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; L (Female Connector Elbow Union) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159940&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R (Different Dia. Module) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159941&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; S (Female Connector Socket) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159942&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; V (Elbow Socket Module) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159943&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Z (Branch Elbow Module) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_159934&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_159934&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(159934, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_159934&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_159945&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Body Size &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_159945&amp;quot; id=&amp;quot;dom_159945&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(159945, this); formChange(159945);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159946&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Body Size 1 &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159947&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Body Size 2 &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159948&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Body Size 3 &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159949&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Body Size 4 &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_159945&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_159945&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(159945, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_159945&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_159951&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Port Size Applicable Tube &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_159951&amp;quot; id=&amp;quot;dom_159951&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(159951, this); formChange(159951);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159952&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Body Size 1 &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159953&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Body Size 2 &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159954&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; Body Size 3 &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159955&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; &amp;#xd8;4 &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159956&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; &amp;#xd8;6 &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159957&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; &amp;#xd8;8 &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159958&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; &amp;#xd8;10 &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159959&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; &amp;#xd8;12 &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159960&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; &amp;#xd8;16 &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159961&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; M5X0.8 &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159962&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; M6X1.0 &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159963&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R1 [R(PT) 1/8, Rc(PT) 1/8] &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159964&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R2 (R(PT) 1/4, Rc(PT) 1/4) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159965&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R3 (R(PT) 3/8, Rc(PT) 3/8) &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;159966&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; R4 (R(PT) 1/2, Rc(PT) 1/2) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_159951&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_159951&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(159951, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_159951&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot; configurationRow&amp;quot; id=&amp;quot;CROW_248627&amp;quot; &amp;gt;
+&amp;lt;td class=&amp;quot;option-label&amp;quot;&amp;gt; Sealant &amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-selection&amp;quot;&amp;gt; &amp;lt;select name=&amp;quot;dom_248627&amp;quot; id=&amp;quot;dom_248627&amp;quot; class=&amp;quot;small&amp;quot; style=&amp;quot;width: 100%;&amp;quot; onchange=&amp;quot;setDomainValue(248627, this); formChange(248627);&amp;quot; &amp;gt;
+&amp;lt;option value=&amp;quot;&amp;quot; selected&amp;gt;-- Pick an Option --&amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;248628&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; w/o Sealant &amp;lt;/option&amp;gt;
+&amp;lt;option value=&amp;quot;248629&amp;quot; style=&amp;quot;color: black; background-color: #FFFFFF&amp;quot;&amp;gt; S (Sealant) &amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;option-status&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;conf_248627&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;display:none;&amp;quot; id=&amp;quot;confsoft_248627&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span onClick=&amp;quot;showDomainMessages(248627, this, &amp;apos;Status&amp;apos;);&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;status_img_248627&amp;quot; src=&amp;quot;images/NA/tilda_16.GIF&amp;quot; alt=&amp;quot;Configuration Status&amp;quot; width=&amp;quot;16&amp;quot; height=&amp;quot;16&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;middle&amp;quot; title=&amp;quot;Configuration Status&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr style=&amp;quot;background-color: transparent;&amp;quot;&amp;gt;&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td colspan=&amp;quot;2&amp;quot; align=&amp;quot;left&amp;quot; nowrap&amp;gt;Options in: &amp;lt;ul style=&amp;quot;margin-top:0px; margin-bottom:0px;&amp;quot;&amp;gt; &amp;lt;li&amp;gt;&amp;lt;span style=&amp;quot;color: #777777;&amp;quot;&amp;gt;Gray&amp;lt;/span&amp;gt; are not compatible with other selected option value.&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;span style=&amp;quot;color: #CC0000;&amp;quot;&amp;gt;Red&amp;lt;/span&amp;gt; conflict with another selected option value.&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;span style=&amp;quot;color: #AA9900;&amp;quot;&amp;gt;Amber&amp;lt;/span&amp;gt; are not recommended.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt;
+&amp;lt;/fieldset&amp;gt;
+&amp;lt;/form&amp;gt;</optionSelectHTML><partNumberHTML>&amp;lt;form id=&amp;quot;form&amp;quot; name=&amp;quot;form&amp;quot; action=&amp;quot;&amp;quot;&amp;gt;
+&amp;lt;fieldset&amp;gt;
+&amp;lt;legend class=&amp;quot;med&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;Configuration Options&amp;lt;/strong&amp;gt;&amp;lt;/legend&amp;gt;
+&amp;lt;table width=&amp;quot;100%&amp;quot; border=&amp;quot;0&amp;quot; cellspacing=&amp;quot;0&amp;quot; cellpadding=&amp;quot;2&amp;quot;&amp;gt;
+&amp;lt;tr&amp;gt;&amp;lt;td class=&amp;quot;tiny&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/td&amp;gt;&amp;lt;td align=&amp;quot;right&amp;quot; class=&amp;quot;tiny&amp;quot; id=&amp;quot;cpn_state&amp;quot; style=&amp;quot;font-weight:bold;&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;span id=&amp;quot;cpn_partnumber&amp;quot; class=&amp;quot;large&amp;quot; &amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td rowspan=&amp;quot;1&amp;quot; align=&amp;quot;right&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;images/NA/tilda_32.gif&amp;quot; alt=&amp;quot;&amp;quot; name=&amp;quot;status_img&amp;quot; id=&amp;quot;status_img&amp;quot; width=&amp;quot;32&amp;quot; height=&amp;quot;32&amp;quot; border=&amp;quot;0&amp;quot;&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt;
+&amp;lt;/fieldset&amp;gt;</partNumberHTML><seriesName></seriesName><configuration_doc></configuration_doc><eds_file></eds_file><relatedProducts><relatedProductsCategory><name>Airline Equipment</name><code>AIRLINE_EQUIPMENT</code><id></id><relatedProductsItems><relatedProductsItem><name>AC20-B to AC60-B, Air Filter, Regulator and Lubricator</name><seoslug>AC20-B-to-AC60-B-Air-Filter-Regulator-and-Lubricator</seoslug><imageS>ARL.jpg</imageS><id>128660</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Tubing</name><code>TUBING</code><id></id><relatedProductsItems><relatedProductsItem><name>TIA, Inch Size Nylon Tubing</name><seoslug>TIA-Inch-Size-Nylon-Tubing</seoslug><imageS>3080.jpg</imageS><id>22102</id></relatedProductsItem><relatedProductsItem><name>TU, Polyurethane Tubing, Metric Size</name><seoslug>TU-Polyurethane-Tubing-Metric-Size</seoslug><imageS>tu.jpg</imageS><id>22082</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Valves &amp;amp; Manifolds</name><code>VALVES_MANIFOLDS</code><id></id><relatedProductsItems><relatedProductsItem><name>SY3000, 5 Port Solenoid Valve, All Types - New Style</name><seoslug>SY3000-5-Port-Solenoid-Valve-All-Types-New-Style</seoslug><imageS>1800A.jpg</imageS><id>50600</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Linear Actuators</name><code>LINEAR_ACTUATORS</code><id></id><relatedProductsItems><relatedProductsItem><name>C(D)Q2-Z, Compact Cylinder, Double Acting Single Rod</name><seoslug>C(D)Q2-Z-Compact-Cylinder-Double-Acting-Single-Rod</seoslug><imageS>Compact-Air-Cylinders-Double-Acting-Single-Rod-CDQ2B40-40DZ-and-CQ2B25-30DZ-2031M.jpg</imageS><id>74838</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory><relatedProductsCategory><name>Tubing PS</name><code>PS_TUBING</code><id></id><relatedProductsItems><relatedProductsItem><name>TIA, Inch Size Nylon Tubing</name><seoslug>TIA-Inch-Size-Nylon-Tubing</seoslug><imageS>3080.jpg</imageS><id>22102</id></relatedProductsItem><relatedProductsItem><name>TU, Polyurethane Tubing, Metric Size</name><seoslug>TU-Polyurethane-Tubing-Metric-Size</seoslug><imageS>tu.jpg</imageS><id>22082</id></relatedProductsItem></relatedProductsItems></relatedProductsCategory></relatedProducts></configurableData></branchCategory>
